@@ -1,5 +1,8 @@
 # Breathe
 
+<p align="center">
+  <img src="https://i.imgur.com/dUNCIbe.png" width="40%"/>
+</p>
 
 ## Table of Contents
 
