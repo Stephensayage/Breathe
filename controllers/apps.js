@@ -1,9 +1,9 @@
-const App = require('../models/app')
+const App = require('../models/apps')
 const db = require('../db/connection')
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
-const getApp = async (req, res) => {
+const getApps = async (req, res) => {
   try {
     const apps = await App.find()
     res.json(apps)
@@ -64,7 +64,7 @@ const deleteApp = async (req, res) => {
 
 module.exports = {
   createApp,
-  getApp,
+  getApps,
   getApp,
   updateApp,
   deleteApp

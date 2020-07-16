@@ -38,7 +38,7 @@ const main = async () => {
   await App.insertMany(apps)
   console.log("Created apps!")
 }
-const run = aysnc() => {
+const run = async () => {
   await main()
   db.close()
 }
