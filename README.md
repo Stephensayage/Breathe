@@ -35,7 +35,7 @@ Web View
 - https://zpl.io/bWoX5kj
 
 Mobile View
-- zpl://project?pid=5ef55c6faf6643a2870ee13b
+- https://www.figma.com/proto/uGUP8VIctIpporYA2qsq8I/P3C-wireframes?node-id=491%3A3326&scaling=scale-down
 
 
 ## MVP Requirements
