@@ -10,6 +10,7 @@ export default function UserCreate() {
       name: '',
       email: '',
       password: '',
+      location: '',
     }
   })
 
@@ -25,6 +26,7 @@ export default function UserCreate() {
         Name <input type="text" value={user.name} onChange={(e)=> createUser({name:e.target.value})} />
         Email <input type="text" value={user.email} onChange={(e)=> createUser({email:e.target.value})}/>
         Password <input type="password" value={user.password} onChange={(e) => createUser({ password: e.target.value })} />
+        Location <input type="location" value={user.location} onChange={(e) => createUser({location: e.target.value})}
         <input type="submit" value="Submit"/>
       </form>
     </div>
