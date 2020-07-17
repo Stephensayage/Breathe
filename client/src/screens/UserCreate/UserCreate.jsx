@@ -1,32 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { Link, Route, Redirect } from 'react-router-dom';
+import { createUser } from '../../services/users'
 
 
 import UserDisplay from "../UserDisplay/UserDisplay";
 
 export default function UserCreate() {
 
-  let [user, createUser] = useState({
-    user: {
-      name: '',
-      email: '',
-      password: '',
-      location: '',
+  let [userName, setUserName] = useState('');
+  let [userEmail, setUserEmail] = useState('');
+  let [userPassword, setUserPassword] = useState('')
+  
+
+
+
+  const handleSubmit = async () => {
+    const useInfo = {
+      'name': userName,
+      'email': userEmail,
+      'password': userPassword,
     }
-  })
-
-  let [created, changeCreated] = useState(false)
-
-  if (created) {
-    return <Redirect to={`/userdisplay`} />
+    const created = await createUser(useInfo)
   }
+
+
   return (
     <div>
-      <form onSubmit={() => changeCreated(true)}>
-        Name <input type="text" value={user.name} onChange={(e)=> createUser({name:e.target.value})} />
-        Email <input type="text" value={user.email} onChange={(e)=> createUser({email:e.target.value})}/>
-        Password <input type="password" value={user.password} onChange={(e) => createUser({ password: e.target.value })} />
-        Location <input type="location" value={user.location} onChange={(e) => createUser({location: e.target.value})}/>
+      <form onSubmit={handleSubmit}>
+        Name <input type="text" value={userName} name='name' onChange={(e) => setUserName(e.target.value)} />
+        Email <input type="text" value={userEmail} name='email' onChange={(e)=> setUserEmail(e.target.value)}/>
+        Password <input type="text" value={userPassword} name='password' onChange={(e) => setUserPassword(e.target.value)} />
+        <input type="submit" value="Submit"/>
       </form>
       </div>
     

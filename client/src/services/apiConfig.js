@@ -3,8 +3,8 @@ import axios from 'axios'
 let apiUrl
 
 const apiUrls = {
-    production: 'https://sei-products-api.herokuapp.com/api',
-    development: 'http://localhost:3000/api'
+  production: 'www.doesntmatter.com',
+  development: 'http://localhost:3000/api'
 }
 
 if (window.location.hostname === 'localhost') {
