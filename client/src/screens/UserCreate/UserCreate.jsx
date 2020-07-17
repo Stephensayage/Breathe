@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, Route, Redirect } from 'react-router-dom';
 import { createUser } from '../../services/users'
 
+
 import UserDisplay from "../UserDisplay/UserDisplay";
 
 export default function UserCreate() {
@@ -24,7 +25,6 @@ export default function UserCreate() {
 
 
   return (
-
     <div>
       <form onSubmit={handleSubmit}>
         Name <input type="text" value={userName} name='name' onChange={(e) => setUserName(e.target.value)} />
@@ -32,7 +32,8 @@ export default function UserCreate() {
         Password <input type="text" value={userPassword} name='password' onChange={(e) => setUserPassword(e.target.value)} />
         <input type="submit" value="Submit"/>
       </form>
-    </div>
+      </div>
+    
   )
 }
 
