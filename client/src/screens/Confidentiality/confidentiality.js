@@ -3,7 +3,7 @@ import App from "./App"
 
 
 function Confidentiality() {
-  return () {
+  return (){
 
     <div className="conatainer">
       {/*<Layout />*/}
