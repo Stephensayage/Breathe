@@ -15,7 +15,6 @@ function Confidentiality() {
         <div className="box box-7">icon-2</div>
         <div className="box box-8">icon-3</div>
         <div className="boc box-9">icon-4</div>
-       
       </footer>
     </div>
   }
