@@ -37,7 +37,7 @@ export const updateUser = async (id, user) => {
   }
 }
 
-export const deleteProduct = async id => {
+export const deleteUser = async id => {
   try {
     const response = await api.delete(`/users/${id}`)
     return response.data
