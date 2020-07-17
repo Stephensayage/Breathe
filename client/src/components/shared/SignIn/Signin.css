@@ -1,0 +1,37 @@
+.sign-in-ctn{
+  display: flex;
+  justify-content: center;
+  border-right: 3px solid black;
+  width: 50%;
+  
+}
+
+.inner-ctn{
+ width: 50%;
+}
+.user-sign{
+width: 900px;
+height: 200px;
+}
+.input-ctn{
+  height: 150px;
+
+}
+.form-input{
+  border: 1px solid rgb(16, 202, 143);
+}
+.sign-in{
+  font-size: 18px;
+  width: 150px;
+  margin: 0 auto;
+}
+.sign-btn{
+  width: 280px;
+  height: 40px;
+  font-size: 20px;
+  color: white;
+  border-radius: 25px;
+  border : 1px solid rgb( 177, 75, 190);
+  background-color: rgb( 177, 75, 190); 
+  margin: -50px 0 0 12px;
+}
