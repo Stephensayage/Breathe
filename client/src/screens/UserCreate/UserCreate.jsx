@@ -13,24 +13,22 @@ function UserCreate() {
   let [userPassword, setUserPassword] = useState('')
   let [created, changeCreated] = useState('no')
   let [user, changeUser] = useState('')
-  
 
-  
-  const handleSubmit = async (e) => {
-    e.preventDefault()
+
+
+  const handleSubmit = async () => {
     const useInfo = {
       'name': userName,
       'email': userEmail,
       'password': userPassword,
-    } 
+    }
     const createdUser = await createUser(useInfo)
     const userId = createdUser._id
     changeUser(userId)
   }
-  
 
   if (created === 'yes') {
-    return <Redirect to={`/userdisplay/${user}`}/>
+    return <Redirect to={`/userdisplay/${user}`} />
   }
 
   return (
@@ -42,7 +40,7 @@ function UserCreate() {
         Password <input type="text" value={userPassword} name='password' onChange={(e) => setUserPassword(e.target.value)} />
         <input type="submit" value="Submit" />
       </form>
-      <button onClick={()=> changeCreated('yes')}>Take me to my profile and matches</button>
+      <button onClick={() => changeCreated('yes')}>Take me to my profile and matches</button>
     </div>
 
   )
