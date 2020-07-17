@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Signin from "../../components/shared/SignIn/Signin"
 import { Link, Route, Redirect } from 'react-router-dom';
 import { createUser } from '../../services/users'
 
@@ -10,7 +11,7 @@ export default function UserCreate() {
   let [userName, setUserName] = useState('');
   let [userEmail, setUserEmail] = useState('');
   let [userPassword, setUserPassword] = useState('')
-  
+
 
 
 
@@ -25,15 +26,17 @@ export default function UserCreate() {
 
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        Name <input type="text" value={userName} name='name' onChange={(e) => setUserName(e.target.value)} />
-        Email <input type="text" value={userEmail} name='email' onChange={(e)=> setUserEmail(e.target.value)}/>
+    <>
+      <div>
+        <form onSubmit={handleSubmit}>
+          Name <input type="text" value={userName} name='name' onChange={(e) => setUserName(e.target.value)} />
+        Email <input type="text" value={userEmail} name='email' onChange={(e) => setUserEmail(e.target.value)} />
         Password <input type="text" value={userPassword} name='password' onChange={(e) => setUserPassword(e.target.value)} />
-        <input type="submit" value="Submit"/>
-      </form>
+          <input type="submit" value="Submit" />
+        </form>
       </div>
-    
+      <Signin />
+    </>
   )
 }
 
