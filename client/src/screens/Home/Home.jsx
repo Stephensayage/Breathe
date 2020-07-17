@@ -7,34 +7,33 @@ import './Home.css'
 
 const Home = () => {
   return (<>
-    <Nav className="justify-content-center" as="ul">
-
+    <Nav className="justify-content-center height: 200px" as="ul">
       <Nav.Item as="li">
-        <Nav.Link href="/account">My Account</Nav.Link>
+        <Nav.Link className="text-dark" href="/account">My Account</Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
-        <Nav.Link eventKey="matches">My Matches</Nav.Link>
+        <Nav.Link className="text-dark" eventKey="matches">My Matches</Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
-        <Nav.Link eventKey="favorites">Favorites</Nav.Link>
+        <Nav.Link className="text-dark" eventKey="favorites">Favorites</Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
-        <Nav.Link eventKey="explore">Explore Services</Nav.Link>
+        <Nav.Link className="text-dark" eventKey="explore">Explore Services</Nav.Link>
       </Nav.Item>
       <Nav.Item as="li">
-        <Nav.Link href="/confidentiality" eventKey="confidentiality">Confidentiality Agreement</Nav.Link>
+        <Nav.Link className="text-dark" href="/confidentiality" eventKey="confidentiality">Confidentiality Agreement</Nav.Link>
       </Nav.Item>
       <h5>Sign In</h5>
     </Nav>
     <div className="main">
       <h4>We can find you a match</h4>
       <h1>Breathe</h1>
-      <div>
+      <div className="home-ctn">
         <p>Welcome to Breathe</p>
         <p>We are a supportive community of users and providers</p>
         <p>We help you find each other</p>
-        <Button type="submit">Get Started</Button>
       </div>
+      <Button className="get-started" type="submit">Get Started</Button>
     </div>
   </>
   )
