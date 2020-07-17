@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Signin from "../../components/shared/SignIn/Signin"
 import { Link, Route, Redirect, withRouter, useParams } from 'react-router-dom';
 import { createUser } from '../../services/users'
 import { getUser } from '../../services/users'
@@ -11,6 +12,7 @@ function UserCreate() {
   let [userName, setUserName] = useState('');
   let [userEmail, setUserEmail] = useState('');
   let [userPassword, setUserPassword] = useState('')
+
   let [created, changeCreated] = useState('no')
   let [user, changeUser] = useState('')
 
@@ -32,7 +34,7 @@ function UserCreate() {
   }
 
   return (
-
+<>
     <div>
       <form onSubmit={handleSubmit} >
         Name <input type="text" value={userName} name='name' onChange={(e) => setUserName(e.target.value)} />
@@ -42,7 +44,8 @@ function UserCreate() {
       </form>
       <button onClick={() => changeCreated('yes')}>Take me to my profile and matches</button>
     </div>
-
+  <Signin />
+</>
   )
 }
 
