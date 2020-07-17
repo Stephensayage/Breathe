@@ -3,6 +3,7 @@ import Layout from '../../components/shared/Layout/Layout'
 import { Link } from 'react-router-dom'
 import api from '../../services/apiConfig'
 import { getApps } from "../../services/apps"
+import './Apps.css'
 
 export default function Apps() {
 
@@ -17,8 +18,10 @@ export default function Apps() {
   }, [])
 
   return (
-    <div>
-      {showApps.map(app =><> <h2>{app.name}</h2><img src={app.imgUrl} /></>)}
-    </div>
+    <Layout>
+      <div className="apps-container">
+        {showApps.map(app => <> <div className="app-container"><img src={app.imgUrl} /><button className="this-should-work">Select</button></div></>)}
+      </div>
+    </Layout>
   )
 }
