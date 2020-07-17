@@ -3,7 +3,7 @@ import './App.css';
 import UserCreate from "./screens/UserCreate/UserCreate"
 import UserDisplay from "./screens/UserDisplay/UserDisplay"
 import { Route , Switch} from "react-router-dom"
-
+import Confidentiality from "./screens/Confidentiality/Confidentiality"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
