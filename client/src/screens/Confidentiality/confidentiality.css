@@ -1,0 +1,46 @@
+/* GRID */
+/* colors temporary - jsut mapping the grid visually */
+
+.comtainer {
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  height: 90vh;
+  width:90vw;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-areas: "header header header"
+                        "left main right"
+                        "footer footer footer";                      
+}
+
+.box-1 { 
+  grid-area: header;
+  background: blue;
+}
+
+.box-2 {
+  grid-area: left;
+  background: blueviolet;
+}
+
+.box-3 {
+  grid-area: main;
+  background: coral;
+}
+
+.box-4 {
+  grid-area: right;
+  background: gold;
+}
+
+.box-5 {
+  grid-area: footer;
+  background: greenyellow;
+}
+
+.box {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 4rem;
+}
