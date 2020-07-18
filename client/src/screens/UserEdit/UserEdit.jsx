@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { getUser, updateUser } from '../../services/users'
 import Layout from '../../components/shared/Layout/Layout'
 import { Redirect } from 'react-router'
-import {withRouter} from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
+import { Accordion, Card, Button } from 'react-bootstrap'
 
 
 class UserEdit extends Component {
@@ -63,7 +64,8 @@ class UserEdit extends Component {
     return (
       <Layout>
       <div className='container-sm mt-5 mb-5 d-flex border'>
-      <div>
+          <div className='mx-auto my-auto'>
+            <div className='d-flex'>
           <label className='border m-2 px-4'>Name</label>
             <form>
               <input
@@ -75,7 +77,8 @@ class UserEdit extends Component {
                 onChange={this.handleChange}
               />
             </form>
-
+            </div>
+          <div className='d-flex'>
             <label className='border m-2 px-4'>Location</label>
             <form>
               <input
@@ -87,7 +90,8 @@ class UserEdit extends Component {
                 onChange={this.handleChange}
               />
             </form>
-
+            </div>
+            <div className='d-flex'>
             <label className='border m-2 px-4'>Password</label>
             <form>
               <input
@@ -98,28 +102,52 @@ class UserEdit extends Component {
                 autoFocus
                 onChange={this.handleChange}
               />
-            </form>
+              </form>
+            </div>
         </div>
         
 
-        <div className=' d-flex flex-column mx-auto border'>
+        <div className=' d-flex flex-column mx-auto'>
           <form>
           {
-            user.imgUrl ?
-              <img src={user.imgUrl} alt={user.name}/>
-              :
-              <img src='https://i.imgur.com/36nRvIA.jpg' alt={user.name}/>
-          }
-           
-            </form>
-            <div className='save-contain mr-auto d-flex flex-column'>
-              <input
-                type='file'
+                user.imgUrl ?
+                  <div classname='mx-auto'>
+                  <img src={user.imgUrl} alt={user.name} />
+                  <Accordion>
+                    <Card className='border-0'>
+                      {/* <Card.Header> */}
+                        <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                          Change Profile Photo
+                        </Accordion.Toggle>
+                      {/* </Card.Header> */}
+                      <Accordion.Collapse eventKey="0">
+                          {/* <Card.Body> */}
+                            
+                            <input
+                              name='imgUrl'
+                              value={user.imgUrl}
+                              onChange={this.handleChange}
+                            /> 
+                             
+                        {/* </Card.Body> */}
+                      </Accordion.Collapse>
+                      </Card>
+                      </Accordion>
+                </div>
+                    
+                  :
+                  <div className='d-flex flex-column '>
+                  <img src='https://i.imgur.com/36nRvIA.jpg' alt={user.name} />
+                  <input
                 name='imgUrl'
                 value={user.imgUrl}
-                onChange={this.fileSelectedHandler}
                 onChange={this.handleChange}
-              />
+              /> 
+                </div>
+          }
+
+            </form>
+            <div className='save-contain mr-auto d-flex flex-column  mb-5'>
               <button className='mt-3'>Change Match Settings</button>
             <button className='mt-5' onClick={this.handleSubmit}>SAVE</button>
             </div>
