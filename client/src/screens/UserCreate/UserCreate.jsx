@@ -25,12 +25,9 @@ function UserCreate() {
       'email': userEmail,
       'password': userPassword,
     }
-    console.log(useInfo)
     const createdUser = await createUser(useInfo)
     const userId = createdUser._id
-    console.log(userId)
     changeUser(userId)
-    console.log(user)
   }
 
   if (created === 'yes') {
