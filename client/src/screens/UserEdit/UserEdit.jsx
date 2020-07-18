@@ -62,10 +62,9 @@ class UserEdit extends Component {
     }
     return (
       <Layout>
-      <div className='container'>
+      <div className='container-sm mt-5 mb-5 d-flex border'>
       <div>
-          <label>Name</label>
-          <div>
+          <label className='border m-2 px-4'>Name</label>
             <form>
               <input
                 placeholder='Name'
@@ -76,10 +75,8 @@ class UserEdit extends Component {
                 onChange={this.handleChange}
               />
             </form>
-          </div>
 
-          <label>Location</label>
-          <div>
+            <label className='border m-2 px-4'>Location</label>
             <form>
               <input
                 placeholder='Location'
@@ -90,11 +87,8 @@ class UserEdit extends Component {
                 onChange={this.handleChange}
               />
             </form>
-          </div>
 
-          <label>Password</label>
-
-          <div>
+            <label className='border m-2 px-4'>Password</label>
             <form>
               <input
                 placeholder='Password'
@@ -105,11 +99,10 @@ class UserEdit extends Component {
                 onChange={this.handleChange}
               />
             </form>
-          </div>
         </div>
         
 
-        <div className='img-container'>
+        <div className=' d-flex flex-column mx-auto border'>
           <form>
           {
             user.imgUrl ?
@@ -117,17 +110,19 @@ class UserEdit extends Component {
               :
               <img src='https://i.imgur.com/36nRvIA.jpg' alt={user.name}/>
           }
-            <input
-              type='file'
-              name='imgUrl'
-              value={user.imgUrl}
+           
+            </form>
+            <div className='save-contain mr-auto d-flex flex-column'>
+              <input
+                type='file'
+                name='imgUrl'
+                value={user.imgUrl}
                 onChange={this.fileSelectedHandler}
                 onChange={this.handleChange}
-            />
-          
-          <button>Change Match Settings</button>
-            <button onClick={this.handleSubmit}>SAVE</button>
-          </form>
+              />
+              <button className='mt-3'>Change Match Settings</button>
+            <button className='mt-5' onClick={this.handleSubmit}>SAVE</button>
+            </div>
           </div>
         </div>
   </Layout>
