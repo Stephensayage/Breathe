@@ -38,6 +38,7 @@ export default function UserDisplay(props) {
         <label>Edit Password:</label><h4>{user.password}</h4>
         <button onClick={handleClick}>Delete My Account</button>
         <Link to={`/user/${user._id}/edit`}><button>Edit Account</button></Link>
+        <Link to={`/matchchoices/${user._id}`}><button>Link</button></Link>
       </div>
     </Layout>
   )

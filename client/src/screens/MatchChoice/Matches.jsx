@@ -1,10 +1,22 @@
 import { Link } from 'react-router-dom';
-import React from 'react';
+import React, {useState, useEffect}from 'react';
 import "./Matches.css";
 import Layout from '../../components/shared/Layout/Layout';
+import { getUser, deleteUser } from '../../services/users';
 
 
-export default function Matches() {
+export default function Matches(props) {
+
+  let[user, showUser] = useState([])
+
+  useEffect(() => {
+    const getData = async () => {
+      let id = props.match.params.id
+      const userShow = await getUser(id)
+      showUser(userShow)
+    }
+    getData()
+  }, [])
   return (
     <Layout>
     <>
@@ -26,7 +38,7 @@ export default function Matches() {
 
       <div className="one-choice-container">
         <img className="choices-image" src="https://svgshare.com/i/N2v.svg" />
-        <Link to="/apps">
+            <Link to={`/apps/${user._id}`}>
           <button className="this-should-work"><strong>Apps</strong></button>
         </Link>
       </div>
