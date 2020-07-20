@@ -10,7 +10,7 @@ export default function UserDisplay(props) {
     user: {
       name: '',
       email: '',
-      password: ''
+      password: '',
     }
   })
 
@@ -32,10 +32,12 @@ export default function UserDisplay(props) {
   return (
     <Layout>
       <div>
-        <h2>{user.name}</h2>
-        <h2>{user.email}</h2>
-        <h2>{user._id}</h2>
+        <label>Name:</label><h4>{user.name}</h4>
+        <label>Email:</label><h4>{user.email}</h4>
+        <label>Location:</label><h4>{user.location}</h4>
+        <label>Edit Password:</label><h4>{user.password}</h4>
         <button onClick={handleClick}>Delete My Account</button>
+        <Link to={`/user/${user._id}/edit`}><button>Edit Account</button></Link>
       </div>
     </Layout>
   )
