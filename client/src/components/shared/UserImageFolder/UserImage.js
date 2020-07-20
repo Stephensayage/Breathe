@@ -29,7 +29,7 @@ function UserImage(props) {
 
   return (
     <div>
-      {user.name !== '' ? <img src={user.imgUrl} /> : <button className="">Sign In/Sign Up</button>}
+      {user.name === '' ? <img src={user.imgUrl} /> : <button>Sign In/Sign Up</button>}
     </div>
   )
 }
