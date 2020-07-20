@@ -15,10 +15,6 @@ const main = async () => {
         "imgUrl": "https://i.imgur.com/b2RvnZh.png"
       },
       {
-        "name": "SIMPLE HABIT",
-        "imgUrl": "https://i.imgur.com/5BEehIn.png" 
-      },
-      {
         "name": "Breeth: Meditation App",
         "imgUrl": "https://i.imgur.com/4cvkDDh.jpg"
       },

@@ -19,8 +19,12 @@ export default function Apps() {
 
   return (
     <Layout>
+      <div classname="meditation-container">
+        <img className="meditation-image" src="https://svgshare.com/i/N2S.svg" />
+        <p><strong>MEDITATION</strong></p>
+        </div>
       <div className="apps-container">
-        {showApps.map(app => <> <div className="app-container"><img src={app.imgUrl} /><button className="this-should-work">Select</button></div></>)}
+        {showApps.map(app => <> <div className="app-container"><img className="apps-images" src={app.imgUrl} /><button className="this-should-work">Select</button></div></>)}
       </div>
     </Layout>
   )
