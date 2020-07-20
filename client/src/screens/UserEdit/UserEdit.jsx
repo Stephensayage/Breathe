@@ -4,6 +4,7 @@ import Layout from '../../components/shared/Layout/Layout'
 import { Redirect } from 'react-router'
 import { withRouter } from 'react-router-dom'
 import { Accordion, Card, Button } from 'react-bootstrap'
+import './UserEdit.css'
 
 
 class UserEdit extends Component {
@@ -63,7 +64,7 @@ class UserEdit extends Component {
     }
     return (
       <Layout>
-      <div className='container-sm mt-5 mb-5 d-flex border'>
+      <div className='container mt-5 mb-5 d-flex  main-container'>
           <div className='mx-auto my-auto'>
             <div className='d-flex'>
           <label className='border m-2 px-4'>Name</label>
@@ -107,29 +108,24 @@ class UserEdit extends Component {
         </div>
         
 
-        <div className=' d-flex flex-column mx-auto'>
+        <div className='d-flex flex-column right-div'>
           <form>
           {
                 user.imgUrl ?
-                  <div classname='mx-auto'>
-                  <img src={user.imgUrl} alt={user.name} />
-                  <Accordion>
-                    <Card className='border-0'>
-                      {/* <Card.Header> */}
-                        <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                  <div classname=''>
+                    <img className='rounded-circle rounded-lg m-5' src={user.imgUrl} alt={user.name} />
+                  <Accordion className='accordian'>
+                      <Card className='border-0 accordian'>
+                        <Accordion.Toggle className='accordian' as={Button} variant="link" eventKey="0">
                           Change Profile Photo
-                        </Accordion.Toggle>
-                      {/* </Card.Header> */}
-                      <Accordion.Collapse eventKey="0">
-                          {/* <Card.Body> */}
+                        </Accordion.Toggle >
+                        <Accordion.Collapse className='accordian' eventKey="0">
                             
                             <input
                               name='imgUrl'
                               value={user.imgUrl}
                               onChange={this.handleChange}
                             /> 
-                             
-                        {/* </Card.Body> */}
                       </Accordion.Collapse>
                       </Card>
                       </Accordion>
@@ -137,7 +133,7 @@ class UserEdit extends Component {
                     
                   :
                   <div className='d-flex flex-column '>
-                  <img src='https://i.imgur.com/36nRvIA.jpg' alt={user.name} />
+                    <img className='rounded-circle m-5' src='https://i.imgur.com/36nRvIA.jpg' alt={user.name} />
                   <input
                 name='imgUrl'
                 value={user.imgUrl}
@@ -148,7 +144,7 @@ class UserEdit extends Component {
 
             </form>
             <div className='save-contain mr-auto d-flex flex-column  mb-5'>
-              <button className='mt-3'>Change Match Settings</button>
+              <button className='mt-3 this-should-work'>Change Match Settings</button>
             <button className='mt-5' onClick={this.handleSubmit}>SAVE</button>
             </div>
           </div>
