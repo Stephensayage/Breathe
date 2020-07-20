@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import Signin from "../../components/shared/SignIn/Signin";
-import {  Redirect, withRouter, useParams } from 'react-router-dom';
-import { createUser } from '../../services/users';
-import Layout from '../../components/shared/Layout/Layout';
+import Signin from "../../components/shared/SignIn/Signin"
+import { Link, Route, Redirect, withRouter, useParams } from 'react-router-dom';
+import { createUser } from '../../services/users'
+import { getUser } from '../../services/users'
+import Layout from "../../components/shared/Layout/Layout"
+import './UserCreate.css'
 
 
 function UserCreate() {
@@ -35,18 +37,26 @@ function UserCreate() {
   }
 
   return (
-    <Layout>
-      <div>
-        <form onSubmit={handleSubmit} >
-          Name <input type="text" value={userName} name='name' onChange={(e) => setUserName(e.target.value)} />
+    <>
+      <Layout>
+        <img className="nav-img" src="https://i.imgur.com/NbDJy5H.jpg" />
+        <div className="outer-ctn">
+          <div className="create-acc-ctn">
+            <form className="form-ctn" onSubmit={handleSubmit} >
+              <div >
+                Name <input type="text" value={userName} name='name' onChange={(e) => setUserName(e.target.value)} />
         Email <input type="text" value={userEmail} name='email' onChange={(e) => setUserEmail(e.target.value)} />
         Password <input type="text" value={userPassword} name='password' onChange={(e) => setUserPassword(e.target.value)} />
-          <input type="submit" value="Submit" />
-        </form>
-        <button onClick={() => changeCreated('yes')}>Take me to my profile and matches</button>
-      </div>
-      <Signin />
-    </Layout>
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+            <button onClick={() => changeCreated('yes')}>Take me to my profile and matches</button>
+          </div>
+          <Signin />
+        </div>
+      </Layout>
+    </>
+
   )
 }
 

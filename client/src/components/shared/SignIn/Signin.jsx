@@ -42,25 +42,28 @@ function Signin() {
 
 
   return (
+    <div className="sign-in-ctn">
 
-    <div>
-      <form className="user-sign">
-        <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
-          Email<input type="email"
-            className="form-input"
-            id="email"
-            placeholder="Enter email"
-            value={user.email}
-            onChange={handleChange} />
+      <div className="inner-ctn">
+        <h4 className="sign-in">Sign In</h4>
+        <form className="user-sign">
+          <div className="input-ctn card border-0 col-12 col-lg-4 login-card mt-2 hv-center">
+            Email<input type="email"
+              className="form-input"
+              id="email"
+              placeholder="Enter email"
+              value={user.email}
+              onChange={handleChange} />
           Password<input type="password"
-            className="form-input"
-            id="password"
-            placeholder="Password"
-            value={user.password}
-            onChange={handleChange} />
-        </div>
-      </form>
-      <button type="submit" onClick={handleClick} >Sign In</button>
+              className="form-input"
+              id="password"
+              placeholder="Password"
+              value={user.password}
+              onChange={handleChange} />
+          </div>
+        </form>
+        <button className="sign-btn" type="submit" onClick={handleClick} >Sign In</button>
+      </div>
     </div>
   )
 }
