@@ -12,7 +12,7 @@ export default function Navigation(props) {
     <Navbar collapseOnSelect expand="sm" className='custom-nav' variant='light' sticky='top'>
       <Navbar.Brand><Link className='text-dark custom-font' to='/'>Breathe</Link></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      
+
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="m-auto">
           <Link className='nav-link text-dark' to='/'>My Account</Link>
@@ -22,7 +22,7 @@ export default function Navigation(props) {
           <Link className='nav-link text-dark' to='/'>Confidentiality Policy</Link>
           <UserImage />
         </Nav>
-      </Navbar.Collapse> 
+      </Navbar.Collapse>
     </Navbar>
   )
 }

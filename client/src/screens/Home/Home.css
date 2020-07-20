@@ -10,11 +10,9 @@
   padding-top: 100px;
 }
 
-.title{
-  font-size: 192px;
-  margin-bottom: -125px;
-  font-family: 'Rouge Script', cursive;
-}
+/* .title-img{
+  
+} */
 
 .home-ctn{
   border: 1px solid rgba(243, 241, 241, 0.84);
@@ -26,7 +24,7 @@
   padding: 15px;
   margin-bottom: 75px;
 }
-p{
+.home-p{
   padding-top: 15px;
   text-align: center;
   font-size: 24px;
