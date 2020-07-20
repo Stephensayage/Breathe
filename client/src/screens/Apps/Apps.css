@@ -1,0 +1,29 @@
+.apps-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.app-container{
+  display: flex;
+  flex-flow: column;
+  font-size: 20px;
+  width: 200px;
+  align-items: center;
+  margin: 25px;
+}
+
+img{
+ max-width: 65px;
+ height: 65px;
+}
+
+.this-should-work {
+  width: 200px;
+  background-color: #3B7D68;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  margin-top: 30px;
+}
