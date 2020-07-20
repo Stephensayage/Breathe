@@ -1,0 +1,27 @@
+.form-ctn{
+  display: flex;
+  width: 900px;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+.inner-ctn{
+  flex-flow: column;
+  padding: 15px;
+
+}
+.create-title{
+  font-size: 24px;
+  width: 250px;
+  margin: 0 auto ;
+  padding-bottom: 35px; 
+}
+.submit, .to-profile{
+  height: 40px;
+  width: 280px;
+  margin-top: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb( 177, 75, 190);
+  border : 1px solid rgb( 177, 75, 190);
+  border-radius: 25px;
+}
