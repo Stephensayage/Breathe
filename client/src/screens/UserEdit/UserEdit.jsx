@@ -138,7 +138,7 @@ class UserEdit extends Component {
                   :
                   <div className='d-flex flex-column '>
                   <img src='https://i.imgur.com/36nRvIA.jpg' alt={user.name} />
-                  <input
+                    <input
                 name='imgUrl'
                 value={user.imgUrl}
                 onChange={this.handleChange}
