@@ -1,8 +1,26 @@
+.meditation-container {
+  display:flex;
+  margin-top: 50px;
+}
+
+.meditation-image {
+  display: flex;
+  margin: 50px auto 0px auto;
+  width: 100px;
+  height: 100px;
+}
+
+p{
+  font-size: 16px;
+}
+
+
 .apps-container {
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
-  justify-content: space-evenly;
+  width: 90%;
+  justify-content: center;
+  margin: 50px auto;
 }
 
 .app-container{
@@ -14,7 +32,7 @@
   margin: 25px;
 }
 
-img{
+.apps-images{
  max-width: 65px;
  height: 65px;
 }

@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useState, useEffect}from 'react';
 import './Nav.css'
 import { Link } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap'
+import UserImage from "../UserImageFolder/UserImage"
 
+export default function Navigation(props) {
 
-export default function Navigation() {
 
   return (
 
@@ -19,6 +20,7 @@ export default function Navigation() {
           <Link className='nav-link text-dark' to='/'>Favorites</Link>
           <Link className='nav-link text-dark' to='/'>Explore Services</Link>
           <Link className='nav-link text-dark' to='/'>Confidentiality Policy</Link>
+          <UserImage />
         </Nav>
       </Navbar.Collapse>
     </Navbar>
