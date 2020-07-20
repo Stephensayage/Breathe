@@ -21,7 +21,7 @@ function App() {
         <Route path="/userdisplay/:id" component={UserDisplay} />
         <Route path='/matchchoices' component={Matches} />
         <Route path='/apps' component={Apps} />
-        <Route path='/user/:id/edit' component={UserEdit}/>
+        <Route path='/user/:id/edit' component={UserEdit} />
       </Switch>
     </div>
   );
