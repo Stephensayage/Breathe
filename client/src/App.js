@@ -1,23 +1,31 @@
 import React from 'react';
 import './App.css';
+import Home from "./screens/Home/Home"
 import UserCreate from "./screens/UserCreate/UserCreate"
 import UserDisplay from "./screens/UserDisplay/UserDisplay"
-import { Route , Switch, Router} from "react-router-dom"
-import Confidentiality from "./screens/Confidentiality/Confidentiality"
+import UserEdit from "./screens/UserEdit/UserEdit"
+import { Route, Switch } from "react-router-dom"
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Confidentiality from "../src/screens/Confidentiality/Confidentiality"
+import Matches from './screens/MatchChoice/Matches';
+import Apps from './screens/Apps/Apps'
 
 
 function App() {
   return (
     <div className="App">
       <Switch>
+        <Route exact path="/" component={Home} />
         <Route exact path="/usercreate" component={UserCreate} />
-        <Route exact path="/userdisplay" component={UserDisplay} />
-      
-      </Switch> 
+        <Route path="/userdisplay/:id" component={UserDisplay} />
+        <Route path='/matchchoices' component={Matches} />
+        <Route path='/apps' component={Apps} />
+        <Route path='/user/:id/edit' component={UserEdit}/>
+      </Switch>
     </div>
   );
 }
 
 export default App;
+
