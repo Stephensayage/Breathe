@@ -44,31 +44,31 @@ export default function UserDisplay(props) {
         <div className='d-flex'>
               <h6 className='border mt-4 px-4 ml-3'>Name:</h6>
               
-              <div className='d-flex  user-info mt-3 mr-5 ml-2'>
+              <div className='d-flex user-info mt-3 mr-5 ml-2'>
                 <p className='m-2'>{user.name}</p>
-                <Link to={`/user/${user._id}/edit`}><FiEdit2 /></Link>
+                <Link to={`/user/${user._id}/edit`}><FiEdit2 className='text-dark'/></Link>
               </div>
         </div>
 
         <div className='d-flex'>
-              <h6 className='border px-4'>Email:</h6>
+              <h6 className='border px-4 ml-3'>Email:</h6>
               
-              <div className='d-flex  user-info px-4 '>
+              <div className='d-flex user-info mr-5 ml-2 '>
                 <p className=' m-2 px-4'>{user.email}</p>
-                <Link to={`/user/${user._id}/edit`}><FiEdit2 /></Link>
+                <Link to={`/user/${user._id}/edit`}><FiEdit2 className='text-dark'/></Link>
               </div>  
         </div>
         <div className='d-flex'>
-              <h6 className='border px-4'>Location:</h6>
-              <div className='d-flex  user-info px-4 mr-5 '>
+              <h6 className='border px-4 ml-3'>Location:</h6>
+              <div className='d-flex user-info mr-5 ml-2 '>
               <p className=' m-2 '>{user.location}</p>
-              <Link to={`/user/${user._id}/edit`}><FiEdit2 /></Link>
+                <Link to={`/user/${user._id}/edit`}><FiEdit2 className='text-dark'/></Link>
             </div>
         </div>
 
             <div className='d-flex justify-content-between my-3 list-div ml-5'>
               <h6 className='m-2'>Edit Password</h6>
-              <Link to={`/user/${user._id}/edit`}><FiEdit2 /></Link>
+              <Link to={`/user/${user._id}/edit`}><FiEdit2 className='text-dark mr-3'/></Link>
           </div>
           </div>
           
@@ -77,7 +77,7 @@ export default function UserDisplay(props) {
 
           <div className='list-div  mx-auto px-4 py-2'> <RiCalendarEventLine/> Calendar</div>
 
-          <div className='list-div  mx-auto px-4 py-2'> <FiHeart/> Favorite Services</div>
+          <div className='list-div  mx-auto px-4 py-2'> <FiHeart /> Favorite Services</div>
 
           <div className='list-div  mx-auto px-4 py-2'> <RiNotification3Line/> Notification Settings</div>
 
