@@ -1,6 +1,6 @@
 import React from "react"
 import images from "../Confidentiality/images/sunrise.png"
-import "./Confidentiality.css"
+import "./confidentiality.css"
 import Layout from "../../components/shared/Layout/Layout"
 
 
@@ -21,7 +21,7 @@ function Confidentiality() {
         {/* <!-- confidentiality text row --> */}
         <div className="row">
           <div className="col-12">
-            <div className="text-container bg-success pl-0 pt-0 my-0">
+            <div className="text-container">
               <h2 className="main-header">CONFIDENTIALITY</h2>
               <p className="main-text">Confidentiality is important to us <br />
               This is about being comfortable and making the first step<br />
@@ -48,18 +48,6 @@ function Confidentiality() {
             <img src="https://i.imgur.com/aKDlVVe.png" alt="hppa" />
           </div>
         </div>
-
-
-
-
-        {/* <aside className="box box-2">LeftSide</aside>
-        <main className="box box-3">Main Content</main>
-        <aside className="box box-4 d-flex justify-content-around">
-          <div className="box box-6">icon-1</div>
-          <div className="box box-7">icon-2</div>
-          <div className="box box-8">icon-3</div>
-          <div className="box box-9">icon-4</div>
-        </aside> */}
       </div>
     </Layout>
   )

@@ -4,7 +4,7 @@ import Home from "./screens/Home/Home"
 import UserCreate from "./screens/UserCreate/UserCreate"
 import UserDisplay from "./screens/UserDisplay/UserDisplay"
 import UserEdit from "./screens/UserEdit/UserEdit"
-import Confidentiality from "./screens/Confidentiality/Confidentiality"
+import Confidentiality from "./screens/Confidentiality/confidentiality"
 import { Route, Switch } from "react-router-dom"
 
 
