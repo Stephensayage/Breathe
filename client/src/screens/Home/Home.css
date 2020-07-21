@@ -1,45 +1,72 @@
+@font-face {
+  font-family: ProximaNovaRegular;
+  src: url(../../fonts/ProximaNova-Regular.otf);
+}
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url(../../fonts/ProximaNova-Bold.otf);
+}
+@font-face {
+  font-family: ProximaNovaSemibold;
+  src: url(../../fonts/ProximaNova-Semibold.otf);
+}
+
 .main { 
+  font-family: ProximaNovaRegular;
   background: url('https://i.imgur.com/SHDjp9B.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 800px;
-}
-.intro{
-  padding-top: 100px;
+  height: auto;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
 }
 
-/* .title-img{
-  
-} */
+.intro{
+  margin: 0 auto;
+  z-index: 4;
+}
+
+.title-img{
+  height: 300px;
+  width: 500px;
+  margin-bottom: -130px;
+  margin-top: -15px;
+  z-index: 2;
+}
 
 .home-ctn{
+  z-index: 0;
   border: 1px solid rgba(243, 241, 241, 0.84);
   border-radius: 20px;
   background-color: rgba(243, 241, 241, 0.84);
-  height: 300px;
-  width: 500px;
+  height: 380px;
+  width: 620px;
   margin: 50px auto 0 auto;
-  padding: 15px;
+  padding: 80px 65px 0 65px;
   margin-bottom: 75px;
 }
 .home-p{
   padding-top: 15px;
   text-align: center;
-  font-size: 24px;
+  font-size: 30px;
   margin: 0 35px 0 35px;
 }
-
+.btn-link{
+  margin: 0 auto;
+}
 .get-started{
+  font-family: ProximaNovaBold;
   width: 400px;
   height: 60px;
-  font-size: 30px;
+  font-size: 40px;
   color: white;
   border-radius: 25px;
   border : 1px solid rgb( 177, 75, 190);
   background-color: rgb( 177, 75, 190);
- 
 }
 .get-started:focus{
   outline: none;

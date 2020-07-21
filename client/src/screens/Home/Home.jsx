@@ -16,7 +16,7 @@ export default function Home() {
           <p className="home-p">We are a supportive community of users and providers</p>
           <p className="home-p">We help you find each other</p>
         </div>
-        <Link to="/usercreate"><button className="get-started" type="submit">Get Started</button></Link>
+        <Link className="btn-link" to="/usercreate"><button className="get-started" type="submit">GET STARTED</button></Link>
       </div>
     </Layout>
   )
