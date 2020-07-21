@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { getUser, deleteUser } from '../../../services/users'
 import { Link, useParams, withRouter } from 'react-router-dom'
+import "./UserImage.css"
 
 
 function UserImage(props) {
@@ -30,7 +31,7 @@ function UserImage(props) {
 
   return (
     <div>
-      {state ? <img src={user.imgUrl} /> : <Link to="/usercreate" ><button>Sign In/Sign Up</button></Link>}
+      {state ? <img className ="nav-user-image ml-5" src={user.imgUrl} /> : <Link to="/usercreate" ><button>Sign In/Sign Up</button></Link>}
     </div>
   )
 }
