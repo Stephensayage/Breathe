@@ -13,7 +13,7 @@ function Confidentiality() {
         <div className="row">
           <div className="col-12">
             <div className="header-image bg-danger">
-              <img src={images} alt="sunrise" />
+              <img src="https://imgur.com/ZXhit1m.png" alt="sunrise" />
             </div>
           </div>
         </div>
@@ -34,22 +34,22 @@ function Confidentiality() {
         </div>
 
         {/* <!-- icon row --> */}
-        <div className="row box-4 d-flex justify-content-around">
-          <div className="col-12 col-lg-3">
-            <div className="box box-6">icon-1</div>
+        <div className="row d-flex justify-content-center icon-set-container ">
+          <div>
+            <img className="image" src="https://i.imgur.com/FsBPaoy.png" alt="mha" />
           </div>
-          <div className="col-12 col-lg-3">
-            <div className="box box-7">icon-2</div>
+          <div>
+            <img src="https://i.imgur.com/X7E4DrU.png" alt="hppa" />
           </div>
-          <div className="col-12 col-lg-3">
-            <div className="box box-8">icon-3</div>
+          <div>
+            <img src="https://i.imgur.com/pS0YkKB.png" alt="hppa" />
           </div>
-          <div className="col-12 col-lg-3">
-            <div className="box box-9">icon-4</div>
+          <div>
+            <img src="https://i.imgur.com/aKDlVVe.png" alt="hppa" />
           </div>
         </div>
 
-        
+
 
 
         {/* <aside className="box box-2">LeftSide</aside>
