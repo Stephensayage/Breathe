@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState }from 'react';
 import './App.css';
 import Home from "./screens/Home/Home"
 import UserCreate from "./screens/UserCreate/UserCreate"
 import UserDisplay from "./screens/UserDisplay/UserDisplay"
 import UserEdit from "./screens/UserEdit/UserEdit"
-import { Route, Switch } from "react-router-dom"
+import { Route, Switch, useParams, withRouter } from "react-router-dom"
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,11 +12,15 @@ import Matches from './screens/MatchChoice/Matches';
 import Apps from './screens/Apps/Apps'
 
 
-function App() {
+function App(props) {
+
+  let id = props.location.pathname
+
   return (
+      
     <div className="App">
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path={id.includes('5') ? '/:id' : '/'} component={Home} />
         <Route exact path="/usercreate" component={UserCreate} />
         <Route path="/userdisplay/:id" component={UserDisplay} />
         <Route path='/matchchoices/:id' component={Matches} />
@@ -27,5 +31,5 @@ function App() {
   );
 }
 
-export default App;
+export default withRouter(App);
 

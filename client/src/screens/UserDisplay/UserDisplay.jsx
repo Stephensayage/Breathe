@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import Layout from '../../components/shared/Layout/Layout'
 import { getUser, deleteUser } from '../../services/users'
 import { Link } from 'react-router-dom'
-import api from '../../services/apiConfig'
 
 export default function UserDisplay(props) {
 
@@ -38,7 +37,7 @@ export default function UserDisplay(props) {
         <label>Edit Password:</label><h4>{user.password}</h4>
         <button onClick={handleClick}>Delete My Account</button>
         <Link to={`/user/${user._id}/edit`}><button>Edit Account</button></Link>
-        <Link to={`/matchchoices/${user._id}`}><button>Link</button></Link>
+        <Link to={`/matchchoices/${user._id}`}><button>My Matches</button></Link>
       </div>
     </Layout>
   )

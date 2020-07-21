@@ -15,21 +15,22 @@ function UserImage(props) {
     }
   })
 
+  let [state, changeState] = useState(false)
+
   useEffect(() => {
     const getData = async () => {
       let id = props.match.params.id
       const userShow = await getUser(id)
       showUser(userShow)
-      console.log(user)
+      changeState(true)
     }
     getData()
   }, [])
 
-  console.log(user)
 
   return (
     <div>
-      {user.name !== '' ? <img src={user.imgUrl} /> : <button className="">Sign In/Sign Up</button>}
+      {state ? <img src={user.imgUrl} /> : <Link to="/usercreate" ><button>Sign In/Sign Up</button></Link>}
     </div>
   )
 }
