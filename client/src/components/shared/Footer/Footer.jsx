@@ -29,12 +29,12 @@ const Footer = () =>
         </div>
 
         <div>
-          <FaFacebook />
-          <FaInstagram />
-          <AiFillTwitterCircle /> 
+          <FaFacebook className='icon text-muted'/>
+          <FaInstagram className='icon text-muted'/>
+          <AiFillTwitterCircle className='icon text-muted'/> 
         </div>
 
-        <div className="text-muted">
+        <div className="text-muted copy">
           <small>Copyright &copy;{new Date().getFullYear()} Breathe | All rights reserved</small></div>
       </div>
     </div>
