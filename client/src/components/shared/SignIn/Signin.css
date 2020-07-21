@@ -39,3 +39,41 @@ height: 200px;
   background-color: rgb( 177, 75, 190); 
   margin: 5px 0 0 12px;
 }
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .sign-in-ctn{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .sign-in{
+        font-size: 24px;
+        margin: 0 auto;
+        padding-bottom: 35px;
+      }
+      .user-sign{
+        width: auto;
+        height: 200px;
+        
+        }
+      .inner-ctn{
+        width: 100%;
+        border-right: none;
+        margin: 0 ;
+       }
+       .input-ctn{
+        height: 150px;
+        align-items: center;
+        width: 300px;
+      }
+       .form-input{
+        width: 200px;
+      }
+      .sign-btn{
+        margin-left: 55px;
+      }
+    }
