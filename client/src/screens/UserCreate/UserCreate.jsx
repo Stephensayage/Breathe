@@ -10,16 +10,13 @@ function UserCreate() {
 
 
   return (
-
-      <Layout>
-        <img className="nav-img" src="https://i.imgur.com/NbDJy5H.jpg" />
-        <div className="outer-ctn">
-          <CreateAcc />
-          <Signin />
-        </div>
-      </Layout>
-    
-
+    <Layout>
+      <img className="nav-img" src="https://i.imgur.com/NbDJy5H.jpg" />
+      <div className="outer-ctn">
+        <CreateAcc />
+        <Signin />
+      </div>
+    </Layout>
   )
 }
 

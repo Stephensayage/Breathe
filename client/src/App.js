@@ -4,6 +4,7 @@ import Home from "./screens/Home/Home"
 import UserCreate from "./screens/UserCreate/UserCreate"
 import UserDisplay from "./screens/UserDisplay/UserDisplay"
 import UserEdit from "./screens/UserEdit/UserEdit"
+import Confidentiality from "./screens/Confidentiality/Confidentiality"
 import { Route, Switch } from "react-router-dom"
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path='/matchchoices/:id' component={Matches} />
         <Route path='/apps/:id' component={Apps} />
         <Route path='/user/:id/edit' component={UserEdit} />
+        <Route path='/confidentiality' component={Confidentiality} />
       </Switch>
     </div>
   );
