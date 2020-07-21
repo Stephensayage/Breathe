@@ -27,6 +27,7 @@ function CreateAcc() {
     const createdUser = await createUser(useInfo)
     const userId = createdUser._id
     changeUser(userId)
+    changeCreated('yes')
   }
 
   if (created === 'yes') {
@@ -42,7 +43,6 @@ function CreateAcc() {
         Email <input className="form-input" type="text" value={userEmail} name='email' onChange={(e) => setUserEmail(e.target.value)} />
         Password <input className="form-input" type="text" value={userPassword} name='password' onChange={(e) => setUserPassword(e.target.value)} />
           <input className="submit" type="submit" value="Sign Up" />
-          <button className="to-profile" onClick={() => changeCreated('yes')}>Take me to my profile</button>
         </div>
       </form>
     </>

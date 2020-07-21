@@ -10,7 +10,6 @@ import { RiCalendarEventLine, RiNotification3Line } from 'react-icons/ri'
 import { Dialog } from "react-bootstrap-easy-dialog";
 
 
-
 export default function UserDisplay(props) {
 
   let [user, showUser] = useState({
