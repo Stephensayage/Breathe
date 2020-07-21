@@ -3,7 +3,7 @@ import App from "./App"
 
 
 function Confidentiality() {
-  return (){
+  return (
 
     <div className="conatainer">
       {/*<Layout />*/}
@@ -18,7 +18,7 @@ function Confidentiality() {
         <div className="boc box-9">icon-4</div>
       </footer>
     </div>
-  }
+  )
 
 }
 
