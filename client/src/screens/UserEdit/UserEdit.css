@@ -1,5 +1,6 @@
 .main-container {
   background-color: #e4eef8;
+  max-width: 900px;
 }
 
 .left-contain {
@@ -10,3 +11,6 @@
  background-color: #e4eef8;
 }
 
+.user-img {
+  width: 50%;
+}

@@ -98,7 +98,7 @@ export default function UserDisplay(props) {
         </div>
 
       <div className='mx-auto my-5 '>
-          <img className='rounded-circle' src={user.imgUrl} alt={user.name} />
+          <img className='rounded-circle custom-img mx-auto' src={user.imgUrl} alt={user.name} />
           <Link to={`/user/${user._id}/edit`}><p className='m-4 mx-auto'>Change Profile Photo</p></Link>
         </div>
       </div>

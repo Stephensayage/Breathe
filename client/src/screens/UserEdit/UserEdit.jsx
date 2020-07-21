@@ -81,7 +81,7 @@ class UserEdit extends Component {
             </form>
             </div>
           <div className='d-flex'>
-              <label className='border m-2 ml-5 px-4'>Location</label>
+              <label className='border  ml-5 px-4'>Location</label>
             <form>
               <input
                 placeholder='Location'
@@ -94,7 +94,7 @@ class UserEdit extends Component {
             </form>
             </div>
             <div className='d-flex'>
-              <label className='border m-2 px-4 ml-5'>Password</label>
+              <label className='border  px-4 ml-5'>Password</label>
             <form>
               <input
                 placeholder='Password'
@@ -114,7 +114,7 @@ class UserEdit extends Component {
           {
                 user.imgUrl ?
                   <div className=''>
-                    <img className='rounded-circle rounded-lg m-5' src={user.imgUrl} alt={user.name} />
+                    <img className='rounded-circle rounded-sm m-5 user-img' src={user.imgUrl} alt={user.name} />
                   <Accordion className='accordian'>
                       <Card className='border-0 accordian'>
                         <Accordion.Toggle className='accordian' as={Button} variant="link" eventKey="0">
@@ -134,7 +134,7 @@ class UserEdit extends Component {
                     
                   :
                   <div className='d-flex flex-column '>
-                    <img className='rounded-circle m-5' src='https://i.imgur.com/36nRvIA.jpg' alt={user.name} />
+                    <img className='rounded-circle m-5 user-img' src='https://i.imgur.com/36nRvIA.jpg' alt={user.name} />
                   <input
                 name='imgUrl'
                 value={user.imgUrl}
