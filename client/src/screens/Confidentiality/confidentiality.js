@@ -7,7 +7,7 @@ import Layout from "../../components/shared/Layout/Layout"
 function Confidentiality() {
   return (
     <Layout>
-      <div className="conatainer">
+      <div className="#">
 
         {/* <!-- image header row --> */}
         <div className="row">
@@ -21,14 +21,20 @@ function Confidentiality() {
         {/* <!-- confidentiality text row --> */}
         <div className="row">
           <div className="col-12">
-            <div className="text-container bg-success pl-3 pt-3 my-5">
-              <h2>COnfidentiality header</h2>
+            <div className="text-container bg-success pl-0 pt-0 my-0">
+              <h2 className="main-header">CONFIDENTIALITY</h2>
+              <p className="main-text">Confidentiality is important to us <br />
+              This is about being comfortable and making the first step<br />
+              The first step can often be the hardest<br />
+              We’re happy you’re here<br />
+              We want to make sure you know that all of your information will stay confidential. <br />
+              We follow all doctor and patient condfidentiality rules according to hipaa compliance </p>
             </div>
           </div>
         </div>
 
         {/* <!-- icon row --> */}
-        <div className="row box-4">
+        <div className="row box-4 d-flex justify-content-around">
           <div className="col-12 col-lg-3">
             <div className="box box-6">icon-1</div>
           </div>
