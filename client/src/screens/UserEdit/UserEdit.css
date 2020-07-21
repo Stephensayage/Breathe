@@ -1,12 +1,12 @@
 .main-container {
-  border: 4px solid #e4eef8;
+  background-color: #e4eef8;
 }
 
-.right-div {
-  background-color: #e4eef8;
-  width: 50%;
+.left-contain {
+  background-color: white;
 }
 
 .accordian {
  background-color: #e4eef8;
 }
+
