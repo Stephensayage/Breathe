@@ -89,7 +89,7 @@ export default function UserDisplay(props) {
                 const confirmed = await dialog.confirm("Are you sure you want to delete your acount?");
                 console.log(confirmed);
                 let id = props.match.params.id
-                const deleteThatUser = await deleteUser(id)
+                const deleteThatUser = await confirmed ? deleteUser(id) : null
                 return deleteThatUser
               }
               return <> <div className='list-div mx-auto px-4 py-2 mb-3' onClick={handleClick}> <FiTrash /> Delete My Account</div></>
