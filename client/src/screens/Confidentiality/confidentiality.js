@@ -1,5 +1,5 @@
 import React from "react"
-//import App from "./App"
+import images from "../Confidentiality/images/sunrise.png"
 import "./Confidentiality.css"
 import Layout from "../../components/shared/Layout/Layout"
 
@@ -13,7 +13,7 @@ function Confidentiality() {
         <div className="row">
           <div className="col-12">
             <div className="header-image bg-danger">
-
+              <img src={images} alt="sunrise" />
             </div>
           </div>
         </div>

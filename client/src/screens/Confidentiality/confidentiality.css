@@ -13,6 +13,10 @@
                         "left main right"
                         "footer footer footer";                      
 } */
+.header-image {
+  background-image: url('https://app.zeplin.io/project/5ef55c6faf6643a2870ee13b/screen/5ef55c96ea96678055c166c2');
+}
+
 .text-container {
   text-align: center;
 }
