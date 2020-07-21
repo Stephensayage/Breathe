@@ -1,0 +1,43 @@
+h4{
+  width: 300px;
+  margin: 50px auto 0px auto;
+  text-align: center;
+}
+
+.choices-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.one-choice-container{
+  display: flex;
+  flex-flow: column;
+  font-size: 20px;
+  width: 200px;
+  align-items: center;
+  margin: 25px;
+}
+
+.this-should-work{
+  padding: 3px;
+  font-size: 15px;
+}
+
+.button-class{
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.all-match-filters{
+  width: 250px;
+  background-color: #B14BBE;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  padding: 3px;
+  font-size: 13px;
+}
