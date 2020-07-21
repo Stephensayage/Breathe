@@ -1,0 +1,14 @@
+.nav-img{
+  height: 150px;
+  
+}
+/* .create-acc-ctn{
+  margin-left: 65%;
+  width: 50%;
+}
+.form-ctn{
+} */
+.outer-ctn{
+  display: flex;
+  flex-flow: row-reverse;
+}

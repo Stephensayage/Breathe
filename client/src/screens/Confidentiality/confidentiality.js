@@ -4,7 +4,6 @@ import App from "./App"
 
 function Confidentiality() {
   return (
-
     <div className="conatainer">
       {/*<Layout />*/}
       <header className="box box-1">Header</header>

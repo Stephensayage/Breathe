@@ -1,35 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { Link, Route, Redirect } from 'react-router-dom';
+import Signin from "../../components/shared/SignIn/Signin"
+import CreateAcc from "../../components/CreateAcc/CreateAcc"
+import { withRouter } from 'react-router-dom';
+import Layout from "../../components/shared/Layout/Layout"
+import './UserCreate.css'
 
-import UserDisplay from "../UserDisplay/UserDisplay";
 
-export default function UserCreate() {
+function UserCreate() {
 
-  let [user, createUser] = useState({
-    user: {
-      name: '',
-      email: '',
-      password: '',
-      location: '',
-    }
-  })
 
-  let [created, changeCreated] = useState(false)
-
-  if (created) {
-    return <Redirect to={`/userdisplay`} />
-  }
   return (
 
-    <div>
-      <form onSubmit={() => changeCreated(true)}>
-        Name <input type="text" value={user.name} onChange={(e)=> createUser({name:e.target.value})} />
-        Email <input type="text" value={user.email} onChange={(e)=> createUser({email:e.target.value})}/>
-        Password <input type="password" value={user.password} onChange={(e) => createUser({ password: e.target.value })} />
-        Location <input type="location" value={user.location} onChange={(e) => createUser({location: e.target.value})}
-        <input type="submit" value="Submit"/>
-      </form>
-    </div>
+      <Layout>
+        <img className="nav-img" src="https://i.imgur.com/NbDJy5H.jpg" />
+        <div className="outer-ctn">
+          <CreateAcc />
+          <Signin />
+        </div>
+      </Layout>
+    
+
   )
 }
 
+export default withRouter(UserCreate)

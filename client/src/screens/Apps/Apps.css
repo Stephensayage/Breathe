@@ -1,0 +1,47 @@
+.meditation-container {
+  display:flex;
+  margin-top: 50px;
+}
+
+.meditation-image {
+  display: flex;
+  margin: 50px auto 0px auto;
+  width: 100px;
+  height: 100px;
+}
+
+p {
+  font-size: 16px;
+}
+
+
+.apps-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+.app-container{
+  display: flex;
+  flex-flow: column;
+  font-size: 20px;
+  width: 200px;
+  align-items: center;
+  margin: 25px;
+}
+
+.apps-images{
+ max-width: 65px;
+ height: 65px;
+}
+
+.this-should-work {
+  width: 200px;
+  background-color: #3B7D68;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  margin-top: 30px;
+}
