@@ -6,11 +6,9 @@ import UserDisplay from "./screens/UserDisplay/UserDisplay"
 import UserEdit from "./screens/UserEdit/UserEdit"
 import { Route, Switch, useParams, withRouter } from "react-router-dom"
 
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Matches from './screens/MatchChoice/Matches';
 import Apps from './screens/Apps/Apps'
-
 
 function App(props) {
 
