@@ -30,3 +30,11 @@ color: white;
 .custom-img {
   width: 80%;
 }
+
+/* @media only screen and (min-width: 600px) {
+  .outer-contain {
+    max-width: 500px;
+    flex-direction: column;
+  }
+} */
+
