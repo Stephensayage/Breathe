@@ -28,10 +28,10 @@ const Footer = () =>
           </ul>
         </div>
 
-        <div>
-          <FaFacebook className='icon text-muted'/>
-          <FaInstagram className='icon text-muted'/>
-          <AiFillTwitterCircle className='icon text-muted'/> 
+        <div className='icon-holder d-flex justify-content-end'>
+          <FaFacebook className='icon '/>
+          <AiFillTwitterCircle className='icon '/> 
+          <FaInstagram className='icon '/>
         </div>
 
         <div className="text-muted copy">
