@@ -25,3 +25,20 @@
   border : 1px solid rgb( 177, 75, 190);
   border-radius: 25px;
 }
+
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .form-ctn{
+        display: flex;
+        width: 414px;
+        margin: 0 auto;
+      }
+      .inner-ctn{
+        flex-flow: column;
+        padding: 15px;
+        align-items: center;
+      }
+    }
