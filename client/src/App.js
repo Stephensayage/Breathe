@@ -4,6 +4,7 @@ import Home from "./screens/Home/Home"
 import UserCreate from "./screens/UserCreate/UserCreate"
 import UserDisplay from "./screens/UserDisplay/UserDisplay"
 import UserEdit from "./screens/UserEdit/UserEdit"
+import Doctors from "./screens/Doctors/Doctors"
 import { Route, Switch, useParams, withRouter } from "react-router-dom"
 
 
@@ -25,6 +26,7 @@ function App(props) {
         <Route path="/userdisplay/:id" component={UserDisplay} />
         <Route path='/matchchoices/:id' component={Matches} />
         <Route path='/apps/:id' component={Apps} />
+        <Route path='/doctors/:id' component={Doctors} />
         <Route path='/user/:id/edit' component={UserEdit} />
       </Switch>
     </div>

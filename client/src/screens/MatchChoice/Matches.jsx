@@ -17,6 +17,7 @@ export default function Matches(props) {
     }
     getData()
   }, [])
+
   return (
     <Layout>
     <>
@@ -27,13 +28,17 @@ export default function Matches(props) {
     <div className = "choices-container">
 
       <div className="one-choice-container">
-        <img className="choices-image" src="https://svgshare.com/i/N2G.svg" />
-        <button className="this-should-work"><strong>1:1 Counseling</strong></button>
+            <img className="choices-image" src="https://svgshare.com/i/N2G.svg" />
+            <Link to={`/doctors/${user._id}`}>
+              <button className="this-should-work"><strong>1:1 Counseling</strong></button>
+              </Link>
       </div>
 
       <div className="one-choice-container">
-        <img className="choices-image" src="https://svgshare.com/i/N32.svg" />
-        <button className="this-should-work"><strong>Group Counseling</strong></button>
+            <img className="choices-image" src="https://svgshare.com/i/N32.svg" />
+            <Link to={`/doctors/${user._id}`}>
+              <button className="this-should-work"><strong>Group Counseling</strong></button>
+              </Link>
       </div>
 
       <div className="one-choice-container">
