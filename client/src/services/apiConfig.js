@@ -3,7 +3,7 @@ import axios from 'axios'
 let apiUrl
 
 const apiUrls = {
-  production: 'www.doesntmatter.com',
+  production: 'https://breathe-app-sckm.herokuapp.com/api/users',
   development: 'http://localhost:3000/api'
 }
 
