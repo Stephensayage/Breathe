@@ -1,0 +1,29 @@
+.doctor-container {
+  display:flex;
+  margin-top: 50px;
+  flex-flow: column;
+  border: 1px solid black;
+  width: 200px;
+  align-items: center;
+}
+
+.doctors-images {
+  display: flex;
+  margin: 50px auto 0px auto;
+  width: 100px;
+  height: 100px;
+}
+
+p{
+  font-size: 16px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.doctors-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: 50px auto;
+}
