@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { getUser, deleteUser } from '../../../services/users'
 import { Link, useParams, withRouter } from 'react-router-dom'
+import "./UserImage.css"
 
 
 function UserImage(props) {
@@ -15,21 +16,22 @@ function UserImage(props) {
     }
   })
 
+  let [state, changeState] = useState(false)
+
   useEffect(() => {
     const getData = async () => {
       let id = props.match.params.id
       const userShow = await getUser(id)
       showUser(userShow)
-      console.log(user)
+      changeState(true)
     }
     getData()
   }, [])
 
-  console.log(user)
 
   return (
     <div>
-      {user.name !== '' ? <img src={user.imgUrl} /> : <button className="">Sign In/Sign Up</button>}
+      {state ? <img className ="nav-user-image ml-5" src={user.imgUrl} /> : <Link to="/usercreate" ><button>Sign In/Sign Up</button></Link>}
     </div>
   )
 }

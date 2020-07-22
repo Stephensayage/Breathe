@@ -65,11 +65,12 @@ class UserEdit extends Component {
     return (
       <Layout>
       <div className='container mt-5 mb-5 d-flex  main-container'>
-          <div className='mx-auto my-auto'>
+          <div className='my-1 mr-4 left-contain'>
             <div className='d-flex'>
-          <label className='border m-2 px-4'>Name</label>
+          <label className='border m-2 ml-5  mt-3 px-4'>Name</label>
             <form>
-              <input
+                <input
+                  className='mr-5 mt-3'
                 placeholder='Name'
                 value={user.name}
                 name='name'
@@ -80,7 +81,7 @@ class UserEdit extends Component {
             </form>
             </div>
           <div className='d-flex'>
-            <label className='border m-2 px-4'>Location</label>
+              <label className='border  ml-5 px-4'>Location</label>
             <form>
               <input
                 placeholder='Location'
@@ -93,7 +94,7 @@ class UserEdit extends Component {
             </form>
             </div>
             <div className='d-flex'>
-            <label className='border m-2 px-4'>Password</label>
+              <label className='border  px-4 ml-5'>Password</label>
             <form>
               <input
                 placeholder='Password'
@@ -108,12 +109,12 @@ class UserEdit extends Component {
         </div>
         
 
-        <div className='d-flex flex-column right-div'>
+        <div className='d-flex flex-column mx-auto'>
           <form>
           {
                 user.imgUrl ?
-                  <div classname=''>
-                    <img className='rounded-circle rounded-lg m-5' src={user.imgUrl} alt={user.name} />
+                  <div className=''>
+                    <img className='rounded-circle rounded-sm m-5 user-img' src={user.imgUrl} alt={user.name} />
                   <Accordion className='accordian'>
                       <Card className='border-0 accordian'>
                         <Accordion.Toggle className='accordian' as={Button} variant="link" eventKey="0">
@@ -133,7 +134,7 @@ class UserEdit extends Component {
                     
                   :
                   <div className='d-flex flex-column '>
-                    <img className='rounded-circle m-5' src='https://i.imgur.com/36nRvIA.jpg' alt={user.name} />
+                    <img className='rounded-circle m-5 user-img' src='https://i.imgur.com/36nRvIA.jpg' alt={user.name} />
                   <input
                 name='imgUrl'
                 value={user.imgUrl}
