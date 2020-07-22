@@ -1,6 +1,6 @@
 .nav-img{
   height: 150px;
-  
+  width: 100%;
 }
 /* .create-acc-ctn{
   margin-left: 65%;
@@ -12,3 +12,13 @@
   display: flex;
   flex-flow: row-reverse;
 }
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .outer-ctn{
+        display: flex;
+        flex-flow: column-reverse;
+        width: 414px;
+      }
+    }

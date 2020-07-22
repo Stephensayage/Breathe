@@ -26,3 +26,15 @@ color: white;
   width: 60%;
   border: 1px solid #e4eef8;
 }
+
+.custom-img {
+  width: 80%;
+}
+
+/* @media only screen and (min-width: 600px) {
+  .outer-contain {
+    max-width: 500px;
+    flex-direction: column;
+  }
+} */
+

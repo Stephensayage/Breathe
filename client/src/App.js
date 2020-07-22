@@ -5,7 +5,9 @@ import UserCreate from "./screens/UserCreate/UserCreate"
 import UserDisplay from "./screens/UserDisplay/UserDisplay"
 import UserEdit from "./screens/UserEdit/UserEdit"
 import Doctors from "./screens/Doctors/Doctors"
+import Confidentiality from "./screens/Confidentiality/confidentiality"
 import { Route, Switch, useParams, withRouter } from "react-router-dom"
+
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -28,6 +30,7 @@ function App(props) {
         <Route path='/apps/:id' component={Apps} />
         <Route path='/doctors/:id' component={Doctors} />
         <Route path='/user/:id/edit' component={UserEdit} />
+        <Route path='/confidentiality' component={Confidentiality} />
       </Switch>
     </div>
   );

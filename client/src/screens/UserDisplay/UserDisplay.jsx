@@ -89,7 +89,7 @@ export default function UserDisplay(props) {
                 const confirmed = await dialog.confirm("Are you sure you want to delete your acount?");
                 console.log(confirmed);
                 let id = props.match.params.id
-                const deleteThatUser = await deleteUser(id)
+                const deleteThatUser = await confirmed ? deleteUser(id) : null
                 return deleteThatUser
               }
               return <> <div className='list-div mx-auto px-4 py-2 mb-3' onClick={handleClick}> <FiTrash /> Delete My Account</div></>
@@ -98,7 +98,7 @@ export default function UserDisplay(props) {
         </div>
 
       <div className='mx-auto my-5 '>
-          <img className='rounded-circle' src={user.imgUrl} alt={user.name} />
+          <img className='rounded-circle custom-img mx-auto' src={user.imgUrl} alt={user.name} />
           <Link to={`/user/${user._id}/edit`}><p className='m-4 mx-auto'>Change Profile Photo</p></Link>
         </div>
       </div>
