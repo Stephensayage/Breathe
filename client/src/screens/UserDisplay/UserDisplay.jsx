@@ -81,8 +81,8 @@ export default function UserDisplay(props) {
           </div>
           
           
-            <div className='list-div  mx-auto px-4 py-3'> <FiEdit2 className='user-icon'/> Edit Profile</div>
-            <Link to={`/user/${user._id}/edit`}></Link>
+            
+          <Link to={`/user/${user._id}/edit`}><div className='list-div  mx-auto px-4 py-3 text-dark'> <FiEdit2 className='user-icon' /> Edit Profile</div></Link>
           
 
           <div className='list-div  mx-auto px-4 py-3'> <BsGear className='user-icon'/> Preferences</div>
@@ -109,7 +109,17 @@ export default function UserDisplay(props) {
         </div>
 
         <div className='d-flex flex-column justify-content-center align-items-center mx-3'>
+          
+          {/* <div className='rounded-circle mt-4'
+            style={{
+              backgroundImage: `url(${user.imgUrl})`
+            }}
+          >
+
+          </div> */}
           <img className='rounded-circle custom-img mt-5' src={user.imgUrl} alt={user.name} />
+
+
           <p className=''>{user.name}</p>
           <p className='member-info'><small>{user.location} | Member since {user.createdAt}</small></p>
           <p>Choose the features that are important to you</p> 
