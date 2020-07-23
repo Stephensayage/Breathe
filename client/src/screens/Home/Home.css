@@ -13,7 +13,7 @@
 
 .main { 
   font-family: ProximaNovaRegular;
-  background: url('https://i.imgur.com/SHDjp9B.jpg') no-repeat center center fixed; 
+  background: url('https://i.imgur.com/DAhBuHQ.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
+  
 }
 
 .intro{
