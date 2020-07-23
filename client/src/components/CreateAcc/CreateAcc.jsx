@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link, Route, Redirect, withRouter, useParams } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Redirect, useParams } from 'react-router-dom';
 import { createUser } from '../../services/users'
 import './CreateAcc.css'
 
@@ -39,9 +39,9 @@ function CreateAcc() {
       <form className="form-ctn" onSubmit={handleSubmit} >
         <div className="inner-ctn card border-0 col-12 col-lg-6 login-card mt-2 hv-center">
           <h4 className="create-title">Create Account</h4>
-          Name <input className="form-input" type="text" value={userName} name='name' onChange={(e) => setUserName(e.target.value)} />
-        Email <input className="form-input" type="text" value={userEmail} name='email' onChange={(e) => setUserEmail(e.target.value)} />
-        Password <input className="form-input" type="text" value={userPassword} name='password' onChange={(e) => setUserPassword(e.target.value)} />
+          Name <input className="form-input" type="text" value={userName} name='name' placeholder="Enter name" onChange={(e) => setUserName(e.target.value)} />
+        Email <input className="form-input" type="text" value={userEmail} name='email' placeholder="Enter email" onChange={(e) => setUserEmail(e.target.value)} />
+        Password <input className="form-input" type="password" value={userPassword} name='password' placeholder="Enter password" onChange={(e) => setUserPassword(e.target.value)} />
           <input className="submit" type="submit" value="Sign Up" />
         </div>
       </form>

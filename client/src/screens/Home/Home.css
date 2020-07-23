@@ -13,7 +13,7 @@
 
 .main { 
   font-family: ProximaNovaRegular;
-  background: url('https://i.imgur.com/SHDjp9B.jpg') no-repeat center center fixed; 
+  background: url('https://i.imgur.com/DAhBuHQ.jpg') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
+  
 }
 
 .intro{
@@ -71,3 +72,36 @@
 .get-started:focus{
   outline: none;
 }
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .title-img{
+        height: 200px;
+        width: 300px;
+        margin-bottom: -105px;
+        margin-top: -15px;
+      }
+      .home-ctn{
+        height: 280px;
+        width: 100%;
+        border-radius: 0px;
+        margin: 50px auto 0 auto;
+        padding: 40px 25px 0 25px;
+        margin-bottom: 75px;
+      }
+      .h4{
+        color: white;
+      }
+      .home-p{
+        padding-top: 15px;
+        font-size: 20px;
+        margin: 0 35px 0 35px;
+      }
+      .get-started{
+        width: 300px;
+        height: 50px;
+        font-size: 24px;
+      }
+    }

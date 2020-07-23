@@ -11,13 +11,13 @@
 }
 .create-title{
   font-size: 24px;
-  width: 250px;
-  margin: 0 auto ;
+  width: 220px;
+  margin: 0 20px ;
   padding-bottom: 35px; 
 }
 .submit, .to-profile{
   height: 40px;
-  width: 280px;
+  width: 250px;
   margin-top: 15px;
   font-size: 20px;
   color: white;
@@ -25,3 +25,26 @@
   border : 1px solid rgb( 177, 75, 190);
   border-radius: 25px;
 }
+.submit:focus{
+  outline: none;
+}
+
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .form-ctn{
+        display: flex;
+        width: 414px;
+        margin: 0 auto;
+      }
+      .inner-ctn{
+        flex-flow: column;
+        padding: 15px;
+        align-items: center;
+      }
+      .submit{
+        width: 210px;
+      }
+    }
