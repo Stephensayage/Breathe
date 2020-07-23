@@ -1,3 +1,16 @@
+@font-face {
+  font-family: ProximaNovaRegular;
+  src: url(../../../fonts/ProximaNova-Regular.otf);
+}
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url(../../../fonts/ProximaNova-Bold.otf);
+}
+@font-face {
+  font-family: ProximaNovaSemibold;
+  src: url(../../../fonts/ProximaNova-Semibold.otf);
+}
+
 .items-contain{
   display: flex;
   height: 100%;
@@ -7,11 +20,12 @@
 .copy {
   background-color:  #99c5f0 ;
   width: 100%;
-  margin: 10px 300px ;
+  /* margin: 0px auto ; */
 }
 
 .main-footer {
   background-color:  #99c5f0 ;
+  font-family: ProximaNovaRegular;
   padding-top: 1em;
   position: relative;
   bottom: 0;
@@ -23,4 +37,7 @@
   height: 25px;
   color: #3A589B;
 }
-
+.col{
+  font-family: ProximaNovaRegular;
+  font-size: 12px;
+}

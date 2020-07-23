@@ -11,32 +11,35 @@ const Footer = () =>
         {/* Column 1 */}
         <div className='col'>
           <ul className='list-unstyled'>
-            <li>About</li>
-            <li>Careers</li>
-            <li>Terms of Service</li>
-            <li>Privacy Policy</li>
+            <li>ABOUT</li>
+            <li>CAREERS</li>
+            <li>TERMS OF SERVICE</li>
+            <li>PRIVACY POLICY</li>
           </ul>
         </div>
         {/* Column 2 */}
 
         <div className='col'>
           <ul className='list-unstyled'>
-            <li>Contact</li>
-            <li>Help</li>
-            <li>Frequently Asked Questions</li>
+            <li>CONTACT</li>
+            <li>HELP</li>
+            <li>FREQUENTLY ASKED QUESTIONS</li>
 
           </ul>
         </div>
 
         <div className='icon-holder d-flex justify-content-end'>
           <FaFacebook className='icon '/>
-          <AiFillTwitterCircle className='icon '/> 
           <FaInstagram className='icon '/>
+          <AiFillTwitterCircle className='icon '/> 
         </div>
 
-        <div className="text-muted copy">
-          <small>Copyright &copy;{new Date().getFullYear()} Breathe | All rights reserved</small></div>
+        <div className=" copy">
+          <p className='text-muted'><small>Copyright &copy;{new Date().getFullYear()} Breathe | All rights reserved</small></p>
       </div>
-    </div>
+
+      </div>
+      </div>
+    
   </div>
 export default Footer

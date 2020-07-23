@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Layout from '../../components/shared/Layout/Layout'
 import { getUser, deleteUser } from '../../services/users'
-import { Link, Redirect } from 'react-router-dom'
-import api from '../../services/apiConfig'
+import { Link } from 'react-router-dom'
 import './UserDisplay.css'
 import { FiEdit2, FiTrash, FiHeart } from 'react-icons/fi'
 import { BsGear } from 'react-icons/bs'
@@ -80,8 +79,6 @@ export default function UserDisplay(props) {
           
           </div>
           
-          
-            
           <Link to={`/user/${user._id}/edit`}><div className='list-div  mx-auto px-4 py-3 text-dark'> <FiEdit2 className='user-icon' /> Edit Profile</div></Link>
           
 
@@ -109,23 +106,18 @@ export default function UserDisplay(props) {
         </div>
 
         <div className='d-flex flex-column justify-content-center align-items-center mx-3'>
-          
-          {/* <div className='rounded-circle mt-4'
-            style={{
-              backgroundImage: `url(${user.imgUrl})`
-            }}
-          >
 
-          </div> */}
           <img className='rounded-circle custom-img mt-5' src={user.imgUrl} alt={user.name} />
 
-
           <p className=''>{user.name}</p>
+
           <p className='member-info'><small>{user.location} | Member since {user.createdAt}</small></p>
+
           <p>Choose the features that are important to you</p> 
           <p className='member-info'>We will find recommendations tailored specifically to you</p>
+
           <Link className='text-dark' to={`/matchchoices/${user._id}`}><button className='match-btn mb-3'>MATCH ME!</button></Link>
-          {/* <Link to={`/user/${user._id}/edit`}><p className='m-4 mx-auto'>Change Profile Photo</p></Link> */}
+          
         </div>
       </div>
     </Layout>

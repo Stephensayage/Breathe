@@ -93,6 +93,12 @@ border-radius: 12px;
   font-family: ProximaNovaRegular;
   background-color: #e4eef8;
   flex-direction: column-reverse;
+  width: 100%;
+}
+.custom-div {
+  background-color: white;
+  font-family: ProximaNovaRegular;
+  width: 100%;
 }
       
     }
