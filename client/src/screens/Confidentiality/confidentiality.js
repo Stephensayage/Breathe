@@ -12,13 +12,13 @@ function Confidentiality() {
         <div className="row">
           <div className="col-12">
             <div className="header-image bg-danger">
-              <img src="https://imgur.com/ZXhit1m.png" alt="sunrise" />
+              <img className="sunrise" src="https://imgur.com/ZXhit1m.png" alt="sunrise" />
             </div>
           </div>
         </div>
 
         {/* <!-- confidentiality text row --> */}
-        <div className="row">
+        <div className="main-text row">
           <div className="col-12">
             <div className="text-container">
               <h2 className="main-header">CONFIDENTIALITY POLICY</h2>
@@ -35,16 +35,16 @@ function Confidentiality() {
         {/* <!-- icon row --> */}
         <div className="row d-flex justify-content-center icon-set-container ">
           <div>
-            <img className="image" src="https://i.imgur.com/FsBPaoy.png" alt="mha" />
+            <img className="confid-image" src="https://i.imgur.com/FsBPaoy.png" alt="mha" />
           </div>
           <div>
-            <img src="https://i.imgur.com/X7E4DrU.png" alt="hppa" />
+            <img className="confid-image" src="https://i.imgur.com/X7E4DrU.png" alt="hppa" />
           </div>
           <div>
-            <img src="https://i.imgur.com/pS0YkKB.png" alt="hppa" />
+            <img className="confid-image" src="https://i.imgur.com/pS0YkKB.png" alt="hppa" />
           </div>
           <div>
-            <img src="https://i.imgur.com/aKDlVVe.png" alt="hppa" />
+            <img className="confid-image" src="https://i.imgur.com/aKDlVVe.png" alt="hppa" />
           </div>
         </div>
       </div>

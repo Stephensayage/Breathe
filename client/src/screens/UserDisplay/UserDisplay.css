@@ -65,8 +65,12 @@ border-radius: 12px;
 
 .member-info {
   margin-top: -15px;
+  text-align: center;
+  width: 397px;
 }
-
+.mood{
+  margin: 20px auto;
+}
 .mood-icon {
   width: 40px;
   height: 40px;
