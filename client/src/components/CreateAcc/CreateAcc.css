@@ -11,19 +11,22 @@
 }
 .create-title{
   font-size: 24px;
-  width: 250px;
-  margin: 0 auto ;
+  width: 220px;
+  margin: 0 20px ;
   padding-bottom: 35px; 
 }
 .submit, .to-profile{
   height: 40px;
-  width: 280px;
+  width: 250px;
   margin-top: 15px;
   font-size: 20px;
   color: white;
   background-color: rgb( 177, 75, 190);
   border : 1px solid rgb( 177, 75, 190);
   border-radius: 25px;
+}
+.submit:focus{
+  outline: none;
 }
 
 
@@ -40,5 +43,8 @@
         flex-flow: column;
         padding: 15px;
         align-items: center;
+      }
+      .submit{
+        width: 210px;
       }
     }
