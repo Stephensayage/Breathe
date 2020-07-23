@@ -8,7 +8,7 @@ function Navigation(props) {
   let id = props.location.pathname
   return (
 
-    <Navbar collapseOnSelect expand="sm" className='custom-nav' variant='light' sticky='top'>
+    <Navbar collapseOnSelect expand="md" className='custom-nav' variant='light' sticky='top'>
       <Navbar.Brand><Link className='text-dark custom-font' to={`/${props.userId}`}><img className="breathe" src="https://svgshare.com/i/N3B.svg" /></Link></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 

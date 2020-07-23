@@ -34,7 +34,7 @@ class UserEdit extends Component {
     this.setState({ user })
   }
 
-  
+
   handleChange = (e) => {
     const { name, value } = e.target
     this.setState({
@@ -62,17 +62,17 @@ class UserEdit extends Component {
     return (
       <Layout>
         <div className='m-3 mx-auto d-flex  main-container'>
-          
+
           <div className='my-1 mx-1 left-contain'>
-            
-            
+
+
             <div className='edit-contain d-flex '>
               <div className='label-contain d-flex flex-column mx-auto'>
-                <label className=' mt-4 p-3'>Name</label>
-                <label className=' p-3'>Location</label>
-                <label className=' p-3'>Password</label>
-      </div>
-        <div className='form-inputs'>
+                <label className='font-weight-bold mt-4 p-3'>Name</label>
+                <label className='font-weight-bold p-3'>Location</label>
+                <label className='font-weight-bold p-3'>Password</label>
+              </div>
+              <div className='form-inputs'>
 
                 <form>
                   <input
@@ -109,8 +109,8 @@ class UserEdit extends Component {
                     onChange={this.handleChange}
                   />
                 </form>
-                
-        </div>
+
+              </div>
             </div>
 
             <div className='d-flex flex-column mt-2'>
@@ -135,12 +135,12 @@ class UserEdit extends Component {
                   return <> <div className='list-div mx-auto px-4 py-3 mb-3' onClick={handleClick}> <FiTrash className='user-icon' /> Delete My Account</div></>
                 }}
               </Dialog>
-              </div>
+            </div>
           </div>
-          
-        <div className='d-flex flex-column mx-auto'>
-          <form>
-          {
+
+          <div className='d-flex flex-column mx-auto'>
+            <form>
+              {
                 user.imgUrl ?
                   <div className='d-flex flex-column justify-content-center align-items-center'>
                     <img className='rounded-circle rounded-sm mt-5 mb-3 user-img' src={user.imgUrl} alt={user.name} />
@@ -150,37 +150,37 @@ class UserEdit extends Component {
                           Change Profile Photo
                         </Accordion.Toggle >
                         <Accordion.Collapse className='accord' eventKey="0">
-                            
-                            <input
-                              name='imgUrl'
-                              value={user.imgUrl}
-                              onChange={this.handleChange}
-                            /> 
-                      </Accordion.Collapse>
+
+                          <input
+                            name='imgUrl'
+                            value={user.imgUrl}
+                            onChange={this.handleChange}
+                          />
+                        </Accordion.Collapse>
                       </Card>
-                      </Accordion>
-                </div>
-                    
+                    </Accordion>
+                  </div>
+
                   :
                   <div className='d-flex flex-column justify-content-center align-items-center'>
                     <img className='rounded-circle mt-5 mb-3 user-img' src='https://i.imgur.com/36nRvIA.jpg' alt={user.name} />
-                  <input
-                name='imgUrl'
-                value={user.imgUrl}
-                onChange={this.handleChange}
-              /> 
+                    <input
+                      name='imgUrl'
+                      value={user.imgUrl}
+                      onChange={this.handleChange}
+                    />
                   </div>
-          }
+              }
             </form>
 
 
             <div className='save-contain mr-auto d-flex flex-column mt-5'>
               <button className='mt-5 matchsettings-btn'>CHANGE MATCH SETTINGS</button>
-            <button className='mt-5 mx-auto save-btn' onClick={this.handleSubmit}>SAVE</button>
+              <button className='mt-5 mx-auto save-btn' onClick={this.handleSubmit}>SAVE</button>
             </div>
           </div>
         </div>
-  </Layout>
+      </Layout>
     )
   }
 }
