@@ -1,16 +1,100 @@
+@font-face {
+  font-family: ProximaNovaRegular;
+  src: url(../../fonts/ProximaNova-Regular.otf);
+}
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url(../../fonts/ProximaNova-Bold.otf);
+}
+@font-face {
+  font-family: ProximaNovaSemibold;
+  src: url(../../fonts/ProximaNova-Semibold.otf);
+}
+
 .main-container {
+  font-family: ProximaNovaRegular;
   background-color: #e4eef8;
-  max-width: 900px;
+  max-width: 800px;
 }
 
 .left-contain {
   background-color: white;
+  width: 50%;
 }
 
-.accordian {
+.accord {
  background-color: #e4eef8;
 }
 
 .user-img {
-  width: 50%;
+  width: 100px;
+  height: 100px;
 }
+
+label {
+  margin: -10px;
+  border: .2px solid #8FC8B3;
+}
+
+.input-contain {
+  border-radius: 0;
+  border: .2px solid #8FC8B3;
+}
+
+.matchsettings-btn {
+  font-family: ProximaNovaRegular;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #3b7d68;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.save-btn {
+  width: 250px;
+  font-family: ProximaNovaRegular;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: white;
+  border: 0;
+  background-color: #b14bbe;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+    
+  .main-container {
+  font-family: ProximaNovaRegular;
+  background-color: white;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.edit-contain {
+flex-direction: row;
+/* justify-content: space-around;   */
+width: 100%;
+}
+
+.left-contain {
+  background-color: white;
+  width: 100%;
+}
+.label {
+  margin: 0px 0px 0px 0px;
+}     
+    }
