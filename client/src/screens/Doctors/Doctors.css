@@ -1,23 +1,31 @@
+@font-face {
+  font-family: ProximaNovaRegular;
+  src: url(../../fonts/ProximaNova-Regular.otf);
+}
+
 .doctor-container {
   display:flex;
   margin-top: 50px;
   flex-flow: column;
   border: 1px solid black;
-  width: 200px;
+  width: 250px;
   align-items: center;
+  background-color: #e4eef8;
 }
 
 .doctors-images {
   display: flex;
-  margin: 50px auto 0px auto;
-  width: 100px;
-  height: 100px;
+  margin: 25px auto -10px auto;
+  width: 125px;
+  height: 125px;
+  border-radius: 25px;
 }
 
 p{
   font-size: 16px;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 10px;
+  font-style: italic;
 }
 
 .doctors-container {
@@ -26,4 +34,18 @@ p{
   width: 90%;
   justify-content: space-evenly;
   margin: 50px auto;
+}
+
+.h4-class{
+  width: 180px;
+}
+
+.doctor-button{
+  width: 175px;
+  background-color: #3B7D68;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  margin-bottom:30px;
+  padding: 10px;
 }

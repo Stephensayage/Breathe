@@ -14,11 +14,11 @@ export default function Navigation(props) {
 
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mb-0 mt-5 ml-auto mr-auto">
-          <Link className='nav-link text-dark' to={`/userdisplay/${props.userId}`}><strong>My Account</strong></Link>
-          <Link className='nav-link text-dark' to={`/matchchoices/${props.userId}`}><strong>My Matches</strong></Link>
-          <Link className='nav-link text-dark' to='/'><strong>Favorites</strong></Link>
-          <Link className='nav-link text-dark' to='/'><strong>Explore Services</strong></Link>
-          <Link className='nav-link text-dark' to='/'><strong>Confidentiality Policy</strong></Link>
+          <Link className='nav-link text-dark' to={`/userdisplay/${props.userId}`}><strong>MY ACCOUNT</strong></Link>
+          <Link className='nav-link text-dark' to={`/matchchoices/${props.userId}`}><strong>MY MATCHES</strong></Link>
+          <Link className='nav-link text-dark' to='/'><strong>FAVORITES</strong></Link>
+          <Link className='nav-link text-dark' to='/'><strong>EXPLORE SERVICES</strong></Link>
+          <Link className='nav-link text-dark' to='/'><strong>CONFIDENTIALITY POLICY</strong></Link>
         </Nav>
         <UserImage />
       </Navbar.Collapse>

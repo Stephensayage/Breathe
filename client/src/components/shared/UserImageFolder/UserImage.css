@@ -1,3 +1,8 @@
+@font-face {
+  font-family: ProximaNovaRegular;
+  src: url(../../../fonts/ProximaNova-Regular.otf);
+}
+
 .nav-user-image{
   border-radius: 25px;
   height: 50px;
@@ -7,5 +12,5 @@
 .sign-in{
   text-decoration: none;
   color: black;
-  font-size: 10px;
+  font-size: 16px !important;
 }
