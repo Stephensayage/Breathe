@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Nav.css'
 import { Link } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap'
@@ -18,7 +18,7 @@ export default function Navigation(props) {
           <Link className='nav-link text-dark' to={`/matchchoices/${props.userId}`}><strong>My Matches</strong></Link>
           <Link className='nav-link text-dark' to='/'><strong>Favorites</strong></Link>
           <Link className='nav-link text-dark' to='/'><strong>Explore Services</strong></Link>
-          <Link className='nav-link text-dark' to='/'><strong>Confidentiality Policy</strong></Link>
+          <Link className='nav-link text-dark' to='/confidentiality'><strong>Confidentiality Policy</strong></Link>
         </Nav>
         <UserImage />
       </Navbar.Collapse>

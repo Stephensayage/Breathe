@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import React, {useState, useEffect}from 'react';
 import "./Matches.css";
 import Layout from '../../components/shared/Layout/Layout';
-import { getUser, deleteUser } from '../../services/users';
+import { getUser } from '../../services/users';
 
 
 export default function Matches(props) {

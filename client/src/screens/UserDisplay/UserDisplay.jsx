@@ -29,42 +29,10 @@ export default function UserDisplay(props) {
     getData()
   }, [])
 
-  // const handleClick = async () => {
-  //   let id = props.match.params.id
-  //   const deleteThatUser = await deleteUser(id)
-  //   return deleteThatUser
-  // }
-
   return (
     <Layout>
       <div className='d-flex mx-auto m-3 outer-contain'>
         <div className='d-flex flex-column custom-div'>
-          <div>
-        {/* <div className='d-flex'>
-              <h6 className='border mt-4 px-4 ml-3'>Name:</h6>
-              
-              <div className='d-flex user-info mt-3 mr-5 ml-2'>
-                <p className='m-2'>{user.name}</p>
-                <Link to={`/user/${user._id}/edit`}><FiEdit2 className='text-dark'/></Link>
-              </div>
-        </div> */}
-
-        {/* <div className='d-flex'>
-              <h6 className='border px-4 ml-3'>Email:</h6>
-              
-              <div className='d-flex user-info mr-5 ml-2 '>
-                <p className=' m-2 px-4'>{user.email}</p>
-                <Link to={`/user/${user._id}/edit`}><FiEdit2 className='text-dark'/></Link>
-              </div>  
-        </div> */}
-        {/* <div className='d-flex'>
-              <h6 className='border px-4 ml-3'>Location:</h6>
-              <div className='d-flex user-info mr-5 ml-2 '>
-              <p className=' m-2 '>{user.location}</p>
-                <Link to={`/user/${user._id}/edit`}><FiEdit2 className='text-dark'/></Link>
-            </div>
-        </div> */}
-            
             <div className='d-flex flex-column'>
               <p>Mood Today?</p>
 
@@ -73,13 +41,10 @@ export default function UserDisplay(props) {
               </div>
               
               <p>Mood History</p>
-
             </div>
-
           
-          </div>
           
-          <Link to={`/user/${user._id}/edit`}><div className='list-div  mx-auto px-4 py-3 text-dark'> <FiEdit2 className='user-icon' /> Edit Profile</div></Link>
+          <Link to={`/user/${user._id}/edit`}><div className='list-div  mx-auto px-4 py-3 text-dark'> <FiEdit2 className='user-icon'/> Edit Profile</div></Link>
           
 
           <div className='list-div  mx-auto px-4 py-3'> <BsGear className='user-icon'/> Preferences</div>
@@ -107,7 +72,14 @@ export default function UserDisplay(props) {
 
         <div className='d-flex flex-column justify-content-center align-items-center mx-3'>
 
-          <img className='rounded-circle custom-img mt-5' src={user.imgUrl} alt={user.name} />
+          
+
+          {
+            user.imgUrl ?
+            <img className='rounded-circle custom-img mt-5' src={user.imgUrl} alt={user.name} />
+              :
+              <img className='rounded-circle mt-5 mb-3 user-img' src='https://i.imgur.com/36nRvIA.jpg' alt={user.name} />
+          }
 
           <p className=''>{user.name}</p>
 

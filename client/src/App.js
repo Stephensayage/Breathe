@@ -6,7 +6,7 @@ import UserDisplay from "./screens/UserDisplay/UserDisplay"
 import UserEdit from "./screens/UserEdit/UserEdit"
 import Doctors from "./screens/Doctors/Doctors"
 import Confidentiality from "./screens/Confidentiality/confidentiality"
-import { Route, Switch, useParams, withRouter } from "react-router-dom"
+import { Route, Switch, withRouter } from "react-router-dom"
 
 
 

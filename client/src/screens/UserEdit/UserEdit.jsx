@@ -8,7 +8,6 @@ import { FiTrash, FiHeart } from 'react-icons/fi'
 import { BsGear } from 'react-icons/bs'
 import { RiCalendarEventLine, RiNotification3Line } from 'react-icons/ri'
 import { Dialog } from "react-bootstrap-easy-dialog";
-
 import './UserEdit.css'
 
 
@@ -35,13 +34,6 @@ class UserEdit extends Component {
     this.setState({ user })
   }
 
-
-  fileSelectedHandler = (e) => {
-    console.log(e.target.files[0])
-    this.setState({
-      imgUrl: e.target.files[0].name
-    })
-  }
   
   handleChange = (e) => {
     const { name, value } = e.target
@@ -170,8 +162,8 @@ class UserEdit extends Component {
                 </div>
                     
                   :
-                  <div className='d-flex flex-column '>
-                    <img className='rounded-circle mt-5 user-img' src='https://i.imgur.com/36nRvIA.jpg' alt={user.name} />
+                  <div className='d-flex flex-column justify-content-center align-items-center'>
+                    <img className='rounded-circle mt-5 mb-3 user-img' src='https://i.imgur.com/36nRvIA.jpg' alt={user.name} />
                   <input
                 name='imgUrl'
                 value={user.imgUrl}

@@ -77,12 +77,6 @@ border-radius: 12px;
   height: 25px;
 }
 
-/* @media only screen and (min-width: 600px) {
-  .outer-contain {
-    max-width: 500px;
-    flex-direction: column;
-  }
-} */
 
 @media only screen 
     and (device-width : 414px) 
@@ -100,5 +94,4 @@ border-radius: 12px;
   font-family: ProximaNovaRegular;
   width: 100%;
 }
-      
     }
