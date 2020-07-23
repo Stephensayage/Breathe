@@ -41,7 +41,7 @@ function CreateAcc() {
           <h4 className="create-title">Create Account</h4>
           Name <input className="form-input" type="text" value={userName} name='name' onChange={(e) => setUserName(e.target.value)} />
         Email <input className="form-input" type="text" value={userEmail} name='email' onChange={(e) => setUserEmail(e.target.value)} />
-        Password <input className="form-input" type="text" value={userPassword} name='password' onChange={(e) => setUserPassword(e.target.value)} />
+        Password <input className="form-input" type="password" value={userPassword} name='password' onChange={(e) => setUserPassword(e.target.value)} />
           <input className="submit" type="submit" value="Sign Up" />
         </div>
       </form>

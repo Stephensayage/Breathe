@@ -111,7 +111,7 @@ export default function UserDisplay(props) {
 
           <p className=''>{user.name}</p>
 
-          <p className='member-info'><small>{user.location} | Member since {user.createdAt}</small></p>
+          {user.createdAt && <p className='member-info'><small>{user.location} | Member since {user.createdAt}</small></p>}
 
           <p>Choose the features that are important to you</p> 
           <p className='member-info'>We will find recommendations tailored specifically to you</p>

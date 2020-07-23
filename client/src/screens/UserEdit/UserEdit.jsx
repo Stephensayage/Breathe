@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { getUser, updateUser, deleteUser } from '../../services/users'
 import Layout from '../../components/shared/Layout/Layout'
 import { Redirect } from 'react-router'
-import { withRouter, Link } from 'react-router-dom'
-import { Accordion, Card, Button } from 'react-bootstrap'
-import { FiEdit2, FiTrash, FiHeart } from 'react-icons/fi'
+import { withRouter } from 'react-router-dom'
+import { Accordion, Card } from 'react-bootstrap'
+import { FiTrash, FiHeart } from 'react-icons/fi'
 import { BsGear } from 'react-icons/bs'
 import { RiCalendarEventLine, RiNotification3Line } from 'react-icons/ri'
 import { Dialog } from "react-bootstrap-easy-dialog";
@@ -74,7 +74,7 @@ class UserEdit extends Component {
           <div className='my-1 mx-1 left-contain'>
             
             
-            <div className='edit-contain d-flex'>
+            <div className='edit-contain d-flex '>
               <div className='label-contain d-flex flex-column mx-auto'>
                 <label className=' mt-4 p-3'>Name</label>
                 <label className=' p-3'>Location</label>
