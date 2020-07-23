@@ -1,3 +1,7 @@
+.row, .main-text{
+  margin-bottom: 25px;
+}
+
 .text-container {
   text-align: center;
 }
@@ -46,12 +50,16 @@
 }
 
 .header-image, .text-container {
-  height: 400px;
+  height: 250px;
 }
 
 .header-image img {
   width: 100%;
-  height: 100%;
+  height: 250px;
+}
+
+.confid-image{
+  height: 100px;
 }
 
 .icon-set-container {
@@ -66,7 +74,7 @@
 }
 
 
-@media all and (min-width: 768px) {
+@media all and (max-width: 414px) {
   .container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -95,6 +103,20 @@
 
   footer {
     order: 4; 
+  }
+  .header-image{
+    width: 414px;
+  }
+  .row{
+    width: 100%;
+  }
+  .sunrise{
+    width: 414px;
+  }
+  .main-text{
+    font-size: 16px;
+    margin-bottom: 100px;
+    padding: 25px 25px;
   }
 
 }
