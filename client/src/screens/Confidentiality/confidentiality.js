@@ -21,7 +21,7 @@ function Confidentiality() {
         <div className="row">
           <div className="col-12">
             <div className="text-container">
-              <h2 className="main-header">CONFIDENTIALITY</h2>
+              <h2 className="main-header">CONFIDENTIALITY POLICY</h2>
               <p className="main-text">Confidentiality is important to us <br />
               This is about being comfortable and making the first step<br />
               The first step can often be the hardest<br />
