@@ -95,3 +95,17 @@ border-radius: 12px;
   width: 100%;
 }
     }
+
+@media screen and (max-width: 750px) {
+  .outer-contain {
+  font-family: ProximaNovaRegular;
+  background-color: #e4eef8;
+  flex-direction: column-reverse;
+  width: 90%;
+}
+.custom-div {
+  background-color: white;
+  font-family: ProximaNovaRegular;
+  width: 100%;
+}
+}
