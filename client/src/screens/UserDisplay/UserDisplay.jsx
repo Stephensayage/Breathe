@@ -21,14 +21,19 @@ export default function UserDisplay(props) {
     }
   })
 
+  let [date, changeDate] = useState([]);
+
   useEffect(() => {
     const getData = async () => {
       let id = props.match.params.id
       const userShow = await getUser(id)
       showUser(userShow)
+      changeDate(new Date(userShow.createdAt).toDateString())
     }
     getData()
+
   }, [])
+
 
 
 
@@ -37,11 +42,13 @@ export default function UserDisplay(props) {
       <div className='d-flex mx-auto m-3 outer-contain'>
         <div className='d-flex flex-column custom-div'>
           <div className='d-flex flex-column'>
+
             <p className="mood">Mood Today?</p>
 
             <div className='align-self-center'>
               <FaRegLaugh className='text-success mood-icon' /> <FaRegMeh className='text-warning mood-icon' /> <FaRegFrown className='text-danger mood-icon' />
             </div>
+
 
             <p className="mood">Mood History</p>
           </div>
@@ -86,7 +93,7 @@ export default function UserDisplay(props) {
 
           <p className=''>{user.name}</p>
 
-          {user.createdAt && <p className='member-info'><small>{user.location} | Member since {user.createdAt}</small></p>}
+          {user.createdAt && <p className='member-info'><small>{user.location} Member since {date}</small></p>}
 
           <p>Choose the features that are important to you</p>
           <p className='member-info'>We will find recommendations tailored specifically to you</p>
