@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './Footer.css'
 import { FaFacebook, FaInstagram } from 'react-icons/fa'
 import { AiFillTwitterCircle } from 'react-icons/ai'
@@ -11,19 +12,19 @@ const Footer = () =>
         {/* Column 1 */}
         <div className='col'>
           <ul className='list-unstyled'>
-            <li>ABOUT</li>
-            <li>CAREERS</li>
-            <li>TERMS OF SERVICE</li>
-            <li>PRIVACY POLICY</li>
+            <Link><li className='text-dark'>ABOUT</li></Link>
+            <Link><li className='text-dark'>CAREERS</li></Link>
+            <Link><li className='text-dark'>TERMS OF SERVICE</li></Link>
+            <Link><li className='text-dark'>PRIVACY POLICY</li></Link>
           </ul>
         </div>
         {/* Column 2 */}
 
         <div className='col'>
           <ul className='list-unstyled'>
-            <li>CONTACT</li>
-            <li>HELP</li>
-            <li>FREQUENTLY ASKED QUESTIONS</li>
+            <Link><li className='text-dark'>CONTACT</li></Link>
+            <Link><li className='text-dark'>HELP</li></Link>
+            <Link><li className='text-dark'>FREQUENTLY ASKED QUESTIONS</li></Link>
 
           </ul>
         </div>
