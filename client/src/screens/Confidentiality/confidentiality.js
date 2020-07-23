@@ -1,5 +1,4 @@
 import React from "react"
-// import images from "../Confidentiality/images/sunrise.png"
 import "./confidentiality.css"
 import Layout from "../../components/shared/Layout/Layout"
 
