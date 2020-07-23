@@ -33,7 +33,7 @@ export default function Doctors(props) {
   return (
     <Layout >
     <div className="doctors-container">
-        {showDocs.map(doc => <div className="doctor-container"><img className="doctors-images" src={doc.imgUrl}/><h2>{doc.name}</h2><p>{doc.location}</p></div>)}
+        {showDocs.map(doc => <div className="doctor-container"><img className="doctors-images" src={doc.imgUrl}/><h4 className="h4-class">{doc.name}</h4><p>{doc.location}</p><button className = "doctor-button">Book Online</button></div>)}
       </div>
       </Layout>
   )
