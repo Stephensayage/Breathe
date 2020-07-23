@@ -31,7 +31,7 @@ function UserImage(props) {
 
   return (
     <div>
-      {state ? <img className ="nav-user-image ml-5" src={user.imgUrl} /> : <Link to="/usercreate" ><p className="sign-in">Sign In/Sign Up</p></Link>}
+      {state ? <img className="nav-user-image ml-5" src={user.imgUrl} /> : <Link to="/usercreate" ><p className="sign-in-nav">Sign In/Sign Up</p></Link>}
     </div>
   )
 }

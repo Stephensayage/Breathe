@@ -12,6 +12,7 @@ import { FaRegLaugh, FaRegMeh, FaRegFrown } from 'react-icons/fa'
 
 export default function UserDisplay(props) {
 
+  let [member, updateMember] = useState('')
   let [user, showUser] = useState({
     user: {
       name: '',
@@ -36,19 +37,20 @@ export default function UserDisplay(props) {
 
 
 
-
   return (
     <Layout>
       <div className='d-flex mx-auto m-3 outer-contain'>
         <div className='d-flex flex-column custom-div'>
           <div className='d-flex flex-column'>
-            <p>Mood Today?</p>
+
+            <p className="mood">Mood Today?</p>
 
             <div className='align-self-center'>
               <FaRegLaugh className='text-success mood-icon' /> <FaRegMeh className='text-warning mood-icon' /> <FaRegFrown className='text-danger mood-icon' />
             </div>
 
-            <p>Mood History</p>
+
+            <p className="mood">Mood History</p>
           </div>
 
 
