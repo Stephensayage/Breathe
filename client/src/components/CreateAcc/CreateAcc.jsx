@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link, Route, Redirect, withRouter, useParams } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Redirect, useParams } from 'react-router-dom';
 import { createUser } from '../../services/users'
 import './CreateAcc.css'
 
