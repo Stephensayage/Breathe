@@ -68,9 +68,9 @@ class UserEdit extends Component {
 
             <div className='edit-contain d-flex '>
               <div className='label-contain d-flex flex-column mx-auto'>
-                <label className='font-weight-bold mt-4 p-3'>Name</label>
-                <label className='font-weight-bold p-3'>Location</label>
-                <label className='font-weight-bold p-3'>Password</label>
+                <label className='label-edit font-weight-bold mt-4 p-3'>Name</label>
+                <label className='label-edit font-weight-bold p-3'>Location</label>
+                <label className='label-edit font-weight-bold p-3'>Password</label>
               </div>
               <div className='form-inputs'>
 
