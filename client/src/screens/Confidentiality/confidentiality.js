@@ -11,7 +11,7 @@ function Confidentiality() {
         {/* <!-- image header row --> */}
         <div className="row">
           <div className="col-12">
-            <div className="header-image bg-danger">
+            <div className="header-image">
               <img className="sunrise" src="https://imgur.com/ZXhit1m.png" alt="sunrise" />
             </div>
           </div>

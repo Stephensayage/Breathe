@@ -30,6 +30,7 @@ height: 200px;
   width: 150px;
   margin: 0 50px;
   padding-bottom: 35px;
+  font-weight: 500;
 }
 .sign-btn{
   width: 250px;
@@ -46,8 +47,7 @@ height: 200px;
 }
 
 @media only screen 
-    and (device-width : 414px) 
-    and (device-height : 736px) 
+    and (max-width : 414px) 
     and (-webkit-device-pixel-ratio : 3) { 
       .sign-in-ctn{
         display: flex;
@@ -79,7 +79,42 @@ height: 200px;
         width: 200px;
       }
       .sign-btn{
-        margin-left: 87px;
+        width: 210px;
+      }
+    }
+    @media only screen 
+    and (max-width : 850px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+      .sign-in-ctn{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .sign-in{
+        font-size: 24px;
+        margin: 0 auto;
+        padding-bottom: 35px;
+      }
+      .user-sign{
+        width: auto;
+        height: 200px;
+        }
+      .inner-ctn{
+        width: 100%;
+        border-right: none;
+        margin: 0 ;
+       }
+       .input-ctn{
+        height: 150px;
+        align-items: center;
+        width: 300px;
+      }
+       .form-input{
+        width: 200px;
+      }
+      .sign-btn{
+        margin: 0 70px;
         width: 210px;
       }
     }
