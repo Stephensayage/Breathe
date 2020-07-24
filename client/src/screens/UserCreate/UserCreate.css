@@ -10,10 +10,19 @@
 @media only screen 
     and (device-width : 414px) 
     and (device-height : 736px) 
-    and (-webkit-device-pixel-ratio : 3) { 
+     { 
       .outer-ctn{
         display: flex;
         flex-flow: column-reverse;
         width: 414px;
+      }
+    }
+    @media only screen 
+    and (max-width : 750px) 
+     { 
+      .outer-ctn{
+        display: flex;
+        flex-flow: column-reverse;
+        width: 100%;
       }
     }
