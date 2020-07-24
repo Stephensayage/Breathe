@@ -22,7 +22,7 @@ function Layout(props) {
   }, [])
 
   const findUser = users.filter(user => params.id === user._id).map(user=>user._id)
-  console.log(findUser)
+  
 
 
 

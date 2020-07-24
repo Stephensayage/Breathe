@@ -31,8 +31,9 @@
   height: 100px;
 }
 
-label {
-  margin: -10px;
+
+.label-edit {
+  margin: -0.5px;
   border: .2px solid #8FC8B3;
 }
 
