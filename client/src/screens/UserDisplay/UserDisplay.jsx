@@ -95,8 +95,9 @@ export default function UserDisplay(props) {
 
           {user.createdAt && <p className='member-info'><small>{user.location} Member since {date}</small></p>}
 
-          <p className='member-info'>Choose the features that are important to you</p>
-          <p className='member-info'>We will find recommendations tailored specifically to you</p>
+
+          <p className='member-info'>Choose the features that are important to you
+          We will find recommendations tailored specifically to you</p>
 
           <Link className='text-dark' to={`/matchchoices/${user._id}`}><button className='match-btn mb-3'>MATCH ME!</button></Link>
 

@@ -56,7 +56,7 @@ function Signin() {
       <div className="inner-ctn">
         <form className="user-sign">
           <div className="input-ctn card border-0 col-12 col-lg-4 col-sm-4 login-card mt-2 hv-center">
-            <p className="sign-in">Sign In</p>
+            <h4 className="sign-in">Sign In</h4>
           Email<input type="email"
               className="form-input"
               id="email"
