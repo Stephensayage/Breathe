@@ -112,4 +112,7 @@ border-radius: 12px;
   font-family: ProximaNovaRegular;
   width: 100%;
 }
+.member-info{
+  width: 90%;
+}
 }

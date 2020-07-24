@@ -36,13 +36,33 @@
     and (-webkit-device-pixel-ratio : 3) { 
       .form-ctn{
         display: flex;
-        width: 414px;
+        width: 100%;
         margin: 0 auto;
       }
       .inner-ctn{
         flex-flow: column;
         padding: 15px;
         align-items: center;
+      }
+      .submit{
+        width: 210px;
+      }
+    }
+
+    @media only screen 
+    and (max-width : 750px) 
+  
+   { 
+      .form-ctn{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .inner-ctn{
+        flex-flow: column;
+        padding: 15px;
+        align-items: center;
+        width: 100%;
       }
       .submit{
         width: 210px;
