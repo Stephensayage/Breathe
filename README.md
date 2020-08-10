@@ -7,29 +7,6 @@
   <img src="https://i.imgur.com/dUNCIbe.png" width="40%"/>
 </p>
 
-- Front End: https://breathe-app-mcks.netlify.app/
-- Back End: https://breathe-app-sckm.herokuapp.com/api
-
-## Table of Contents
-
-- [OVERVIEW](#OVERVIEW)
-  - [Group Dynamics](#Group-Dynamics)
-  - [MVP Requirements](#MVP-Requirements)
-  - [Post-MVP Possibilities](#Post-MVP-Possibilities)
-  - [Presentations](#Presentations)
-- [GETTING STARTED](#GETTING-STARTED)
-  - [STEP 1. Read All Instructions](#STEP-1-Read-All-Instructions)
-  - [STEP 2. Choose Your Czar](#STEP-2-Choose-Your-Czar)
-  - [STEP 3. Set Team Expectations](#STEP-3-Set-Team-Expectations)
-  - [STEP 4. Pitch Your Idea](#STEP-4-Pitch-Your-Idea)
-  - [STEP 5. Project Management](#STEP-5-Project-Management)
-  - [STEP 6. Version Control](#STEP-6-Version-Control)
-  - [STEP 7. Get Hacking](#STEP-7-Get-Hacking)
-  - [EVALUATION](#EVALUATION)
-- [PLAGIARISM](#PLAGIARISM)
-
-<br>
-
 # OVERVIEW
 
 Breathe is a mental health match making application. Users will have the abililty to create an account, and find an app, or medical professional based on their filtered parameters. 
